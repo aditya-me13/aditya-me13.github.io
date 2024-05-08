@@ -23,7 +23,7 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Aditya Mehta"
-  pronouns         : example: "he/him"  
+  pronouns         : "he/him"  
   bio              : "Short biography for the left-hand sidebar"
   location         : "Gandhinagar"
   employer         : "Indian Institute of Technology"
