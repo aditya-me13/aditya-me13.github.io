@@ -4,8 +4,8 @@ collection: teaching
 type: "Numerical Methods Project"
 permalink: /Projects/Mangalyan_Analysis
 venue: "Prof. Dilip Shrinivas Sundaram and Prof. Akshaa Vatwani"
-date: Aug '22 - Oct '22
-location: IIT Gandhinagar
+date:
+location:  Aug '22 - Oct '22, IIT Gandhinagar
 ---
 
 
