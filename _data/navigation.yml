@@ -1,24 +1,23 @@
 # main links links
 main:
 
+  # - title: "Miscellaneous"
+  #   url: /publications/
 
   # - title: "Projects"
   #   url: /year-archive/
+  
+  - title: "CV"
+    url: /files/resume.pdf
 
   - title: "Projects"
-    url: /Projects/    
+    url: /Projects/ 
 
   - title: "Achievements"
     url: /achievements/    
     
   - title: "PORs"
     url: /pors/
-    
-  - title: "CV"
-    url: /files/resume.pdf
-
-  # - title: "Miscellaneous"
-  #   url: /publications/
     
   - title: "Contact Me"
     url: /markdown/

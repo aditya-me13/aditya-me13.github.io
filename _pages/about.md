@@ -16,13 +16,19 @@ I am a Sophomore at one of the most decorated technological insttitutes: Indian 
 - 🔭 I am currently strengthening my grip at Machine Learning solutions to real life problems, along side exploring Software Developement and Hardware Implementation on Computer Architecture. In a nutshell EXPLORING.
 - 🌱 My deep interest also lies in Data Science and Digital Signal Processing Domains of Computer Science.
 - ⚡ Fun fact: I like exploring as many domains of Computer Science as possible; but I am too lazy to find a balance between them. 😄
+<hr>
 
 Recent News:
 -----
-
-**April '24** :  I was awarded with **Prof. G. V. Rao National Scholarship** for excellent academic performance and exemplary potential. \
-**April '24** :  Our team successfully completed the Project on Image Processing Toolbox on FPGA. [Know more](https://aditya-me13.github.io/Projects/IPT). \
-**March '24** :  I along with my team of 100+ members successfully conducted **Gujarat's largest student-run cultural fest** at IIT Gandginagar.\
+<!-- | | |
+| --- | --- | -->
+##### **24th April 2024** :
+ Our team successfully completed the Project on Image Processing Toolbox on FPGA. [Know more](https://aditya-me13.github.io/Projects/IPT).
+##### **2nd April 2024** :
+  I was awarded with **Prof. G. V. Rao National Scholarship** for excellent academic performance and exemplary potential. 
+##### **18th March 2024** :
+ Our team of 100+ members successfully conducted **Gujarat's largest student-run cultural fest** at IIT Gandginagar.
+<hr>
 
 Education:
 -----
@@ -32,17 +38,20 @@ Education:
 | B.Tech. | _Computer Science and Engineering_| IIT Gandhinagar| 2022-Present| 9.32/10| 
 | Class XII  | _Physics, Chemistry, Maths_| St. Xavier's High School, Adipur| 2021-2022 | 94.25 %| 
 | Class X | | Archana St. Xavier's School, Mandvi | 2019-2020| 94.66 %| 
+<hr>
 
 My Background:
 -------
 - I was born and brought up in Mandvi, Gujarat.
 - I will write more here when I am free. I am Lazy 🙃.
 
+<hr>
 
 Hobbies and Interests:
 ------
 -I will write here as well, really soon
 
+<hr>
 
 For more info:
 ------
