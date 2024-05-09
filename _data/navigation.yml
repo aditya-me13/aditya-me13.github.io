@@ -1,14 +1,14 @@
 # main links links
 main:
 
+  # - title: "Projects"
+  #   url: /year-archive/
+
   - title: "Projects"
-    url: /year-archive/
-    
-  # - title: "Talks"
-  #   url: /talks/    
+    url: /teaching/    
 
   - title: "Achievements"
-    url: /teaching/    
+    url: /talks/    
     
   - title: "PORs"
     url: /portfolio/
