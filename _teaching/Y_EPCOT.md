@@ -4,8 +4,8 @@ collection: teaching
 type: "Engineering Basics Project"
 permalink: /Projects/EPCOT
 venue: "Prof. Udit Bhatiya"
-date: 
-location: May '23 - July '23, IIT Gandhinagar
+date: May '23 - July '23
+location: IIT Gandhinagar
 ---
 
 
