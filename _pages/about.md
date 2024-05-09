@@ -21,7 +21,6 @@ Recent News:
 -----
 
 **April '24** :  I was awarded with **Prof. G. V. Rao National Scholarship** for excellent academic performance and exemplary potential.
-
 **March '24** :  I along with my team of 100+ members successfully conducted **Gujarat's largest student-run cultural fest** at IIT Gandginagar.
 
 Education:
