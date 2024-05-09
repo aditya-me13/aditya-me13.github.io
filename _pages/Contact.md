@@ -12,7 +12,7 @@ redirect_from:
 -----
 <center> <h2>Reach out to Me and Follow</h2></center>
 
-<center>
+
 
 <a href="aditya.mehta@iitgn.ac.in"><img src="../_pages/gmail.png" alt="Gmail" style="width:42px;height:42px;"></a>
 <a href="https://github.com/aditya-me13"><img src="../_pages/github-mark.png" alt="github" style="width:42px;height:42px;"></a>
@@ -22,21 +22,6 @@ redirect_from:
 <a href="https://www.instagram.com/adityaa_me13/?utm_source=qr&igshid=OGIxMTE0OTdkZA%3D%3D"><img src="../_pages/instagram.png" alt="Instagram" style="width:42px;height:42px;"></a>
 
 
-![Gmail](gmail.png)
-
-![Github](github-mark.png)
-
-![LeetCode](Leetcode.png)
-
-![LinkedIn](linkedin.png)
-
-![Telegram](telegram.png)
-
-![Insta](instagram.png)
-
-
-
-</center>
 
 
   
