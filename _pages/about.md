@@ -20,9 +20,9 @@ I am a Sophomore at one of the most decorated technological insttitutes: Indian 
 Recent News:
 -----
 
-[**April '24**](https://github.com/aditya-me13/aditya-me13.github.io/edit/master/_pages/about.md#recent-news) :  I was awarded with **Prof. G. V. Rao National Scholarship** for excellent academic performance and exemplary potential.
+**April '24** :  I was awarded with **Prof. G. V. Rao National Scholarship** for excellent academic performance and exemplary potential.
 
-[**March '24**](https://github.com/aditya-me13/aditya-me13.github.io/edit/master/_pages/about.md#recent-news) :  I along with my team of 100+ members successfully conducted **Gujarat's largest student-run cultural fest** at IIT Gandginagar.
+**March '24** :  I along with my team of 100+ members successfully conducted **Gujarat's largest student-run cultural fest** at IIT Gandginagar.
 
 Education:
 -----
