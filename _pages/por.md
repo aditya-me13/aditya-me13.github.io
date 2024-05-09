@@ -7,7 +7,7 @@ redirect_from:
   - /pors
 ---
 
-<!-- {% include base_path %} -->
+{% include base_path %}
 -----
 -----
 

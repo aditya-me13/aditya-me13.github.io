@@ -22,11 +22,11 @@ Recent News:
 -----
 <!-- | | |
 | --- | --- | -->
-##### **24th April 2024** :
+#### **24th April 2024** :
  Our team successfully completed the Project on Image Processing Toolbox on FPGA. [Know more](https://aditya-me13.github.io/Projects/IPT).
-##### **2nd April 2024** :
+#### **2nd April 2024** :
   I was awarded with **Prof. G. V. Rao National Scholarship** for excellent academic performance and exemplary potential. 
-##### **18th March 2024** :
+#### **18th March 2024** :
  Our team of 100+ members successfully conducted **Gujarat's largest student-run cultural fest** at IIT Gandginagar.
 <hr>
 
@@ -38,6 +38,7 @@ Education:
 | B.Tech. | _Computer Science and Engineering_| IIT Gandhinagar| 2022-Present| 9.32/10| 
 | Class XII  | _Physics, Chemistry, Maths_| St. Xavier's High School, Adipur| 2021-2022 | 94.25 %| 
 | Class X | | Archana St. Xavier's School, Mandvi | 2019-2020| 94.66 %| 
+
 <hr>
 
 My Background:
