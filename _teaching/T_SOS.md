@@ -4,12 +4,12 @@ collection: teaching
 type: "Signal Systems Project"
 permalink: /Projects/Second_Order_Systems
 venue: "Prof. Nithin V George"
-date: Jan '24 - Apr '24
+date: Jan '23 - Apr '24
 location: IIT Gandhinagar
 ---
 
 
-### Jan '23 - Apr '24, IIT Gandhinagar
+### Jan '24 - Apr '24, IIT Gandhinagar
 
 * Developed an Android application for a smart bicycle to enhance child safety through real-time monitoring.
 * Integrate **dembedded hardware sensors**, including a gyroscope, accelerometer, GPS, microphone, and antenna, work in unison to detect occurrences such as over-speed, falls, and boundary crossings with precision and efficiency.

@@ -8,7 +8,7 @@ main:
     url: /Projects/    
 
   - title: "Achievements"
-    url: /talks/    
+    url: /achievements/    
     
   - title: "PORs"
     url: /portfolio/
