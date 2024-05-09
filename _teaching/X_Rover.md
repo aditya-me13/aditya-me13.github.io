@@ -4,8 +4,8 @@ collection: teaching
 type: "Electronics Project"
 permalink: /Projects/Smart_Rover
 venue: "Prof. Arup Lal Chakraborty"
-date:
-location: Jan '23 - Apr '23, IIT Gandhinagar
+date: Jan '23 - Apr '23,
+location: IIT Gandhinagar
 ---
 
 
