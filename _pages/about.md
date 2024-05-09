@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hi There 👋! I am Aditya Mehta"
+title: "Hi There 👋! I am Aditya Mehta."
 author_profile: true
 redirect_from: 
   - /about/
@@ -20,9 +20,9 @@ I am a Sophomore at one of the most decorated technological insttitutes: Indian 
 Recent News:
 -----
 
-| April '24 |  Awarded with Prof. G. V. Rao National Scholarship for excellent academic performance and exemplary potential.|
-| --- | --- |
-| __March '24__ |  __I along with my team of 100+ members successfully conducted Gujarat's biggest college cultiral fest at IIT Gandginagar.__ |
+[**April '24**](https://github.com/aditya-me13/aditya-me13.github.io/edit/master/_pages/about.md#recent-news) :  I was awarded with **Prof. G. V. Rao National Scholarship** for excellent academic performance and exemplary potential.
+
+[**March '24**](https://github.com/aditya-me13/aditya-me13.github.io/edit/master/_pages/about.md#recent-news) :  I along with my team of 100+ members successfully conducted **Gujarat's largest student-run cultural fest** at IIT Gandginagar.
 
 Education:
 -----
