@@ -10,8 +10,8 @@ location: IIT Gandhinagar
 
 
 
-Key Feature
------
+### Key Feature
+
 - Engineered a smart sensor-based, collapsible temperature and humidity regulating device to assist individuals who are more susceptible to heat strokes or need a cool environment while working in extreme temperature conditions.
 - Successfully incorporated the **Peltier Module** for cooling along with the traditional **Evaporation based Cooling** method to achieve an optimal balance between efficiency as well as sustainability of the cooling model.
 
