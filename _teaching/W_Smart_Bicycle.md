@@ -9,6 +9,7 @@ location: IIT Gandhinagar
 ---
 
 
+#### Details:
 
 * Developed an Android application for a smart bicycle to enhance child safety through real-time monitoring.
 * Integrate **dembedded hardware sensors**, including a gyroscope, accelerometer, GPS, microphone, and antenna, work in unison to detect occurrences such as over-speed, falls, and boundary crossings with precision and efficiency.
