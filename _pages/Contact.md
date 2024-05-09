@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "CONTACT ME"
-permalink: /reach/
+permalink: /reach_me/
 author_profile: true
 redirect_from:
   - /reach
