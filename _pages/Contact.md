@@ -22,12 +22,17 @@ redirect_from:
 <a href="https://www.instagram.com/adityaa_me13/?utm_source=qr&igshid=OGIxMTE0OTdkZA%3D%3D"><img src="instagram.png" alt="Instagram" style="width:42px;height:42px;"></a> -->
 
 
-<img src="gmail.png" alt="Gmail" style="width:42px;height:42px;">
-<img src="github-mark.png" alt="github" style="width:42px;height:42px;">
-<img src="Leetcode.png" alt="leetcode" style="width:42px;height:42px;">
-<img src="linkedin.png" alt="LinkedIn" style="width:42px;height:42px;">
-<img src="telegram.png" alt="Telegram" style="width:42px;height:42px;">
-<img src="instagram.png" alt="Instagram" style="width:42px;height:42px;">
+![Gmail](gmail.png)
+
+![Github](github-mark.png)
+
+![LeetCode](Leetcode.png)
+
+![LinkedIn](linkedin.png)
+
+![Telegram](telegram.png)
+
+![Insta](instagram.png)
 
 
 
