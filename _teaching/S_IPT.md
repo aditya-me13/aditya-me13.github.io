@@ -3,7 +3,7 @@ title: "Image Processing Toolbox deployed on FPGA Hardware"
 collection: teaching
 type: "Electonics Project"
 permalink: /Projects/Smart_Bicycle
-venue: "[Prof. Joycee Mekie](https://www.iitgn.ac.in/faculty/ee/fac-joycee)"
+venue: "Prof. Joycee Mekie"
 date: Aug '23 - Apr '24 
 location: IIT Gandhinagar
 ---
