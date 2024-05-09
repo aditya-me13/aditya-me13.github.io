@@ -12,20 +12,20 @@ redirect_from:
 -----
 
 
-Core Committee Member, Blithchron.
------
-### Annual Cultural Fest of IIT Gandhinagar, May '23 - Apr '24
+## Core Committee Member, Blithchron, Annual Cultural Fest.
+IIT Gandhinagar, _May '23 - Apr '24_.
 
 * Leading a team of **100+ undergraduate and postgraduate students**, managing expense, coordinating with vendors, and orchestrating the planning, execution, and delivery of Gujarat’s largest student-run college cultural festival.
 * Learning and Implementing **Adobe Creative Suite** (including Illustrator, Photoshop, Premiere Pro and After Effects) for creative content creation and to enhance the promotion of the cultural fest’s [Social Media handle](https://www.instagram.com/blithchron_iitgn?igsh=MWV2ZzFjemVibWQ3cg==).
 
+<hr>
 
-## Student Guide and Member.
-### Student Support Service of IIT Gandhinagar, Jul '23 - Apr '24
+## Student Guide and Member, Student Support Service.
+IIT Gandhinagar, _Jul '23 - Apr '24_.
 
 * Part of a dedicated faculty-driven team assisting students with diverse concerns and issues of college life.
 
-
+<hr>
 <!-- Projects:
 ======
   <ul>{% for post in site.teaching reversed %}
