@@ -14,7 +14,7 @@ redirect_from:
 
 University Rankings:
 ======
-* Awarded [Dean’s List](https://www.iitgn.ac.in/students/deanslist) for Academic Excellence for **all 4 eligible semesters** at IIT Gandhinagar.
+* Awarded [Dean’s List](https://www.iitgn.ac.in/students/deanslist) for Academic Excellence for **All 4 eligible semesters** at IIT Gandhinagar.
 
 Admission Test Rankings:
 ======
