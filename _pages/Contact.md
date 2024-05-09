@@ -14,14 +14,11 @@ redirect_from:
 
 <center>
 
-![MyImage](https://github.com/aditya-me13/aditya-me13.github.io/blob/master/images/gmail.png)
+[<img src="gmail.png" alt="gmail" width="50"/>](https://github.com/aditya-me13) [<img src="Leetcode.png" alt="Leetcode" width="50"/>](aditya.mehta@iitgn.ac.in) 
+  [<img src="linkedin.png" alt="linkedin" width="40"/>](https://www.linkedin.com/in/aditya-mehta-6ba290256/)   [<img src="telegram.png" alt="telegram" width="45"/>](https://t.me/AdityaMehta1307)  [<img src="instagram.png" alt="instagram" width="45"/>](https://www.instagram.com/adityaa_me13/?utm_source=qr&igshid=OGIxMTE0OTdkZA%3D%3D) 
 
-![MyImage](images/gmail.png)
 </center>
-<img title="Gmail" alt="Gmail" src="images/gmail.png"> 
+
+
   
-  ![MyImage](gmail.png)
-
-
-   ![MyImage](https://github.com/aditya-me13/aditya-me13.github.io/blob/master/images/gmail.png)
   
