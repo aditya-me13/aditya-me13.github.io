@@ -7,7 +7,7 @@ main:
   # - title: "Projects"
   #   url: /year-archive/
   
-  - title: "CV"
+  - title: "My Resume"
     url: /files/resume.pdf
 
   - title: "Projects"
@@ -18,6 +18,9 @@ main:
     
   - title: "PORs"
     url: /pors/
+
+  - title: "Extra"
+    url: /misc/
     
   - title: "Contact Me"
-    url: /markdown/
+    url: /reach_me/
