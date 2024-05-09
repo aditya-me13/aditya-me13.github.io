@@ -22,11 +22,11 @@ Recent News:
 -----
 <!-- | | |
 | --- | --- | -->
-#### **24th April 2024** :
+### **24th April 2024** :
  Our team successfully completed the Project on Image Processing Toolbox on FPGA. [Know more](https://aditya-me13.github.io/Projects/IPT).
-#### **2nd April 2024** :
+### **2nd April 2024** :
   I was awarded with **Prof. G. V. Rao National Scholarship** for excellent academic performance and exemplary potential. 
-#### **18th March 2024** :
+### **18th March 2024** :
  Our team of 100+ members successfully conducted **Gujarat's largest student-run cultural fest** at IIT Gandginagar.
 <hr>
 
