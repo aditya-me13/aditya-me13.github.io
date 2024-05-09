@@ -4,7 +4,7 @@ collection: teaching
 type: "Signal Systems Project"
 permalink: /Projects/Smart_Bicycle
 venue: "Prof. Nithin V. George"
-date: 
+date: Aug '23 - Apr '24 
 location: IIT Gandhinagar
 ---
 
