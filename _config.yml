@@ -8,20 +8,20 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "MehtaVerse Homepage"
+title                    : "Overview"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
 url                      : https://aditya-me13.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "aditya-me13/aditya-me13.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "Profile_2.jpeg"
   name             : "Aditya Mehta"
   pronouns         : #"he/him"  
   bio              : "I am a Sophomore at IIT Gandhinagar studying Computer Science and Engineering."
@@ -54,7 +54,7 @@ author:
   goodreads        : # Username
   google_plus      : # Username
   keybase          : # Username
-  instagram        : # Username
+  instagram        : "adityaa_me13"
   lastfm           : # Username
   linkedin         : "aditya-mehta-6ba290256" 
   mastodon         : # URL
