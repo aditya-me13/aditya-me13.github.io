@@ -13,6 +13,6 @@ redirect_from:
 <center> <h2>Reach out to Me and Follow</h2></center>
 
 <center>
-![alt text](image.png)
+    <img title="Gmail" alt="Gmail" src="images/gmail.png"> 
 
 </center>

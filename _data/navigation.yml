@@ -6,21 +6,21 @@ main:
 
   # - title: "Projects"
   #   url: /year-archive/
-  
-  - title: "My Resume"
-    url: /files/resume.pdf
 
   - title: "Projects"
     url: /Projects/ 
 
+  # - title: "Internships"
+  #   url: /intern/
+
   - title: "Achievements"
     url: /achievements/    
     
-  - title: "PORs"
+  - title: "Lead Positions"
     url: /pors/
 
-  - title: "Extra"
-    url: /misc/
+  - title: "My Resume"
+    url: /files/resume.pdf
     
   - title: "Contact Me"
     url: /reach_me/
