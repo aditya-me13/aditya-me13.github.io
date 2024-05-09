@@ -2,7 +2,7 @@
 title: "Text Generator based on next character prediction using MLP"
 collection: teaching
 type: "Machine Learning Project"
-permalink: /Projects/Smart_Bicycle
+permalink: /Projects/text_generator
 venue: "Prof. Nipun Batra"
 date: Jan '24 - Apr '24 
 location: IIT Gandhinagar
