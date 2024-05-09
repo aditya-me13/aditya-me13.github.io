@@ -13,11 +13,11 @@ main:
   - title: "PORs"
     url: /portfolio/
     
-  - title: "My Resume"
+  - title: "CV"
     url: /files/resume.pdf
 
-  - title: "Miscellaneous"
-    url: /publications/
+  # - title: "Miscellaneous"
+  #   url: /publications/
     
   - title: "Contact Me"
     url: /markdown/
