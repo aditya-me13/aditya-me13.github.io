@@ -20,8 +20,9 @@ I am a Sophomore at one of the most decorated technological insttitutes: Indian 
 Recent News:
 -----
 
-**April '24** :  I was awarded with **Prof. G. V. Rao National Scholarship** for excellent academic performance and exemplary potential.
-**March '24** :  I along with my team of 100+ members successfully conducted **Gujarat's largest student-run cultural fest** at IIT Gandginagar.
+**April '24** :  I was awarded with **Prof. G. V. Rao National Scholarship** for excellent academic performance and exemplary potential. \
+**April '24** :  Our team successfully completed the Project on Image Processing Toolbox on FPGA. [Know more](https://aditya-me13.github.io/Projects/IPT). \
+**March '24** :  I along with my team of 100+ members successfully conducted **Gujarat's largest student-run cultural fest** at IIT Gandginagar.\
 
 Education:
 -----

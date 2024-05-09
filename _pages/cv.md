@@ -8,6 +8,9 @@ redirect_from:
 ---
 
 <!-- {% include base_path %} -->
+-----
+-----
+-----
 
 University Rankings:
 ======
@@ -16,14 +19,18 @@ University Rankings:
 Admission Test Rankings:
 ======
 * Secured an All India Rank of **4059** in Joint Entrance Examination (JEE Adv.) conducted by National Testing Agency.
-* Secured All India Rank **468** in IAT** for research-based admission in Indian Institute of Science Education and Research (IISERs).
+* Secured All India Rank **468** in IAT for research-based admission in Indian Institute of Science Education and Research (IISERs).
 * Secured an overall State Rank of **49** in ACPC (Admission Committee for Professional Courses) for Academic Year 2021-22.
 
-Projects:
+Schilarships:
+=====
+* Awarded **Prof. G. V. Rao National Scholarship** of Rs. 1 Lakh for excellent Academic Performance and exemplary potential.
+
+<!-- Projects:
 ======
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ul> -->
   
 Skills
 ======
