@@ -9,12 +9,22 @@ location: IIT Gandhinagar
 ---
 
 
-### Signal Systems Project, Jan '23 - Apr '24, IIT Gandhinagar
+### Jan '23 - Apr '24, IIT Gandhinagar
 
 * Developed an Android application for a smart bicycle to enhance child safety through real-time monitoring.
 * Integrate **dembedded hardware sensors**, including a gyroscope, accelerometer, GPS, microphone, and antenna, work in unison to detect occurrences such as over-speed, falls, and boundary crossings with precision and efficiency.
 * Implemented real-time alert mechanisms, audible alarms and GPS location displays, ensuring parental awareness.
 * Incorporated emergency response features, activating microphone and camera recording on the rider’s device in the event of a fall and transmitting an SOS signal with recorded data to the parent’s device.transition.
+
+
+<hr>
+<hr>
+
+Video Demonstration : [Youtube](https://youtu.be/fA2nxhroGQ0) \
+Github Repo Link : [Github](https://github.com/aditya-me13/SSRP-CS-IITGN/tree/main/3.%20Second%20Order%20Systems) \
+Group Members: 
+- Abhinav Goud
+- Akshat Barnwal
 
 <!--Heading 1
 ======

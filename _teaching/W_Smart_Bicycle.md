@@ -16,6 +16,18 @@ location: IIT Gandhinagar
 * Implemented real-time alert mechanisms, audible alarms and GPS location displays, ensuring parental awareness.
 * Incorporated emergency response features, activating microphone and camera recording on the rider’s device in the event of a fall and transmitting an SOS signal with recorded data to the parent’s device.transition.
 
+<hr>
+<hr>
+
+Video Demonstration 1: [Youtube](https://www.youtube.com/watch?v=wltbPszcKK8) \
+Video Demonstration 2: [Youtube](https://www.youtube.com/watch?v=qEZNYEAVPpE) \
+Github Repo Link : [Github](https://github.com/aditya-me13/SSRP-CS-IITGN/tree/main) \
+Group Members: 
+- Abhinav Goud
+- Akshat Barnwal
+- Jiya Desai
+- Nishi Shah
+
 <!--Heading 1
 ======
 
