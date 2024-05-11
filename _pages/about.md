@@ -11,7 +11,7 @@ redirect_from:
 
 About Me:
 -----
-I am a Sophomore at one of the most decorated technological insttitutes: Indian Institute of Technology Gandhinagar, in Computer Science and Engineering Department.
+I am a Sophomore at one of the most decorated technological institutes: **Indian Institute of Technology Gandhinagar**, in Computer Science and Engineering Department.
 
 - 🔭 I am currently strengthening my grip at Machine Learning solutions to real life problems, along side exploring Software Developement and Hardware Implementation on Computer Architecture. In a nutshell EXPLORING.
 - 🌱 My deep interest also lies in Data Science and Digital Signal Processing Domains of Computer Science.
@@ -20,8 +20,7 @@ I am a Sophomore at one of the most decorated technological insttitutes: Indian 
 
 Recent News:
 -----
-<!-- | | |
-| --- | --- | -->
+
 ### **24th April 2024** :
  Our team successfully completed the Project on Image Processing Toolbox on FPGA. [Know more](https://aditya-me13.github.io/Projects/IPT).
 ### **2nd April 2024** :
