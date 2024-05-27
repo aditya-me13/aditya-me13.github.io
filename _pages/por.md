@@ -23,7 +23,7 @@ IIT Gandhinagar, _May '23 - Apr '24_.
 ---
   
 
-## Overall Executive, PDC, Professional Development Council.
+## General Executive, PDC, Professional Development Council.
 IIT Gandhinagar, _May '24 - Current_.
 
 * Contributed to organizing and conducting workshops on resume building, interview preparation, and mock tests, ensuring students were well-prepared for their career pursuits and develop Professional Skills.
