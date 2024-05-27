@@ -9,6 +9,9 @@ main:
 
   # - title: "Internships"
      # url: /interns/
+  
+  - title: "Internships"
+    url: /interns/
      
   - title: "Projects"
     url: /Projects/ 
@@ -21,6 +24,3 @@ main:
 
   - title: "My Resume"
     url: /files/resume.pdf
-    
-  - title: "Contact Me"
-    url: /interns/
