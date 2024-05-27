@@ -7,8 +7,8 @@ main:
   # - title: "Projects"
   #   url: /year-archive/
 
-  - title: "Internships"
-     url: /interns/
+  # - title: "Internships"
+  #    url: /interns/
      
   - title: "Projects"
     url: /Projects/ 
