@@ -7,11 +7,11 @@ main:
   # - title: "Projects"
   #   url: /year-archive/
 
-  - title: "Projects"
-    url: /Projects/ 
-
   - title: "Internships"
      url: /internships/
+     
+  - title: "Projects"
+    url: /Projects/ 
 
   - title: "Achievements"
     url: /achievements/    
