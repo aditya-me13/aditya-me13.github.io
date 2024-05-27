@@ -15,7 +15,8 @@ redirect_from:
 University Rankings:
 ======
 * Awarded [Dean’s List](https://www.iitgn.ac.in/students/deanslist) for Academic Excellence for **All 4 eligible semesters** at IIT Gandhinagar.
-
+* Ranked 4th among the entire batch (across all branches) at the end of my first year.
+  
 Admission Test Rankings:
 ======
 * Secured an All India Rank of **4059** in Joint Entrance Examination (JEE Adv.) conducted by National Testing Agency.
