@@ -15,17 +15,26 @@ redirect_from:
 ## Core Committee Member, Blithchron, Annual Cultural Fest.
 IIT Gandhinagar, _May '23 - Apr '24_.
 
-* Leading a team of **100+ undergraduate and postgraduate students**, managing expense, coordinating with vendors, and orchestrating the planning, execution, and delivery of Gujarat’s largest student-run college cultural festival.
-* Learning and Implementing **Adobe Creative Suite** (including Illustrator, Photoshop, Premiere Pro and After Effects) for creative content creation and to enhance the promotion of the cultural fest’s [Social Media handle](https://www.instagram.com/blithchron_iitgn?igsh=MWV2ZzFjemVibWQ3cg==).
+* Led a diverse team of **100+ undergraduate and postgraduate students** in organizing Gujarat’s largest student-run college cultural festival, demonstrating strong leadership and management skills.
+* Managed the festival's budget, coordinated with multiple vendors, coordinated with Collage Administrative Body and ensured the seamless planning, execution, and delivery of all event activities.
+* Learned and implemented **Adobe Creative Suite** (Illustrator, Photoshop, Premiere Pro, After Effects) to create compelling content and enhance the promotion of the festival's [Social Media Handle](https://www.instagram.com/blithchron_iitgn?igsh=MWV2ZzFjemVibWQ3cg==), significantly boosting engagement on platforms like Instagram.
+* Developed and executed comprehensive marketing strategies to increase festival visibility and attendance, leveraging social media and creative design skills to attract a larger audience and participants.
+---
+  
 
-<hr>
+## Overall Executive, PDC, Professional Development Council.
+IIT Gandhinagar, _May '24 - Current_.
 
-## Student Guide and Member, Student Support Service.
-IIT Gandhinagar, _Jul '23 - Apr '24_.
+* Contributed to organizing and conducting workshops on resume building, interview preparation, and mock tests, ensuring students were well-prepared for their career pursuits and develop Professional Skills.
+* Acted as a communication bridge between the Placement Team and the Student Body, addressing feedback from companies, and managing student concerns and grievances to enhance career readiness.
+--- 
 
-* Part of a dedicated faculty-driven team assisting students with diverse concerns and issues of college life.
+## Student Guide and Member, Student Support Service
+IIT Gandhinagar, _Jul '23 - Apr '24_
 
-<hr>
+* Collaborated with a faculty-driven team to provide comprehensive support to students, addressing a wide range of concerns and issues related to college life.
+* Offered guidance and mentorship to freshman students, helping them navigate academic challenges and personal issues, fostering a supportive and inclusive campus environment.
+---
 <!-- Projects:
 ======
   <ul>{% for post in site.teaching reversed %}
