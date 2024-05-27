@@ -68,5 +68,3 @@ For even more info:
 ------
 Reach out to me :)
 <hr>
-
-<p align="center"> " No tresure is worth as much as the Good that can be done with it." </p>
