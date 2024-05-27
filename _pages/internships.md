@@ -12,28 +12,12 @@ redirect_from:
 -----
 
 
-University Rankings:
-======
-* Awarded [Dean’s List](https://www.iitgn.ac.in/students/deanslist) for Academic Excellence for **All 4 eligible semesters** at IIT Gandhinagar.
+## [Kapidhwaj AI](https://www.kapidhwaj.ai/) | Machine Learning and AI Developer Intern
+Industrial Intern | Research Park, Gandhinagar | _May '24 - Current_
 
-Admission Test Rankings:
-======
-* Secured an All India Rank of **4059** in Joint Entrance Examination (JEE Adv.) conducted by National Testing Agency.
-* Secured All India Rank **468** in IAT for research-based admission in Indian Institute of Science Education and Research (IISERs).
-* Secured an overall State Rank of **49** in ACPC (Admission Committee for Professional Courses) for Academic Year 2021-22.
+### Goals:
+- To contribute to the Enterprise Security Model over large dataset of criminals and suspects.
+- Deploy the model on Google Cloud and optimizde the deployment for cost and accuracy. 
+- Test and modify the Face Recognition Pipeline for large lengths of Dataset and increased traffic.
 
-Schilarships:
-=====
-* Awarded **Prof. G. V. Rao National Scholarship** of Rs. 1 Lakh for excellent Academic Performance and exemplary potential.
 
-<!-- Projects:
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul> -->
-  
-Skills
-======
-* __Programming Languages__ : Python, C, C++, Verilog
-* __Libraries__ : NumPy, Pandas, Sklearn, Scipy, Matplotlib, Seaborn, Tensorflow
-* __Other Tools__ : Xilinx Vivado, Git, Autodesk Inventor, Adobe Creative suite, Arduino IDE, Linux, LATEX
