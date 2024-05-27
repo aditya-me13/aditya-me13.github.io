@@ -1,6 +1,5 @@
 {% include base_path %}
 
-<div class="Quote"> "No tresure is worth as much as the Good that can be done with it."</div>
 {% if site.author.github or site.author.instagram or site.atom_feed.hide != true %}
 <div class="page__footer-follow">
   <ul class="social-icons">
@@ -19,5 +18,5 @@
   </ul>
 </div>
 {% endif %}
-
+<div class="Quote"> "No tresure is worth as much as the Good that can be done with it."</div>
 <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>. Hosted by<a href="https://pages.github.com/"> Github Pages</a></div>
