@@ -19,8 +19,8 @@ main:
   - title: "Lead Positions"
     url: /pors/
 
-  # - title: "My Resume"
-  #   url: /files/resume.pdf
+  - title: "My Resume"
+    url: /files/resume.pdf
     
-  # - title: "Contact Me"
-  #   url: /reach_me/
+  - title: "Contact Me"
+    url: /reach_me/
