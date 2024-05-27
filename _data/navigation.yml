@@ -24,3 +24,6 @@ main:
 
   - title: "My Resume"
     url: /files/resume.pdf
+
+  - title: "Contact Me"
+    url: /reach
