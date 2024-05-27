@@ -7,8 +7,8 @@ main:
   # - title: "Projects"
   #   url: /year-archive/
 
-  - title: "Internships"
-     url: /interns/
+  # - title: "Internships"
+     # url: /interns/
      
   - title: "Projects"
     url: /Projects/ 
@@ -23,4 +23,4 @@ main:
     url: /files/resume.pdf
     
   - title: "Contact Me"
-    url: /reach_me/
+    url: /interns/
