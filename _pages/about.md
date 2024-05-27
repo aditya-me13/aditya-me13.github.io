@@ -20,7 +20,7 @@ I am currently a sophomore at one of the most prestigious technological institut
 
 Recent News:
 -----
-**27th May 2024** : I started my Internship at [Kapidhwaj AI](https://www.kapidhwaj.ai/) security solutions as an AI/ML developer. [Know more](https://aditya-me13.github.io/Projects/IPT).
+**27th May 2024** : I started my Internship at [Kapidhwaj AI](https://www.kapidhwaj.ai/) security solutions as an AI/ML developer. [Know more](https://aditya-me13.github.io/interns/).
 
 **24th April 2024** : Our team successfully completed the Project on Image Processing Toolbox on FPGA. [Know more](https://aditya-me13.github.io/Projects/IPT).
 
