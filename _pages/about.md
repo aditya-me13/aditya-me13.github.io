@@ -67,7 +67,7 @@ Hobbies and Interests:
 For even more info:
 ------
 
-<center> <h2>Reach out to Me and Follow</h2></center>
+<center> <p>Reach out to Me and Follow<p></center>
 <center> 
 <a href="mailto:aditya.mehta@iitgn.ac.in"><img src="../_pages/gmail.png" alt="Gmail" style="width:42px;height:42px;"></a>
 <a href="https://github.com/aditya-me13"><img src="../_pages/github-mark.png" alt="github" style="width:42px;height:42px;"></a>
@@ -77,5 +77,6 @@ For even more info:
 <a href="https://www.instagram.com/adityaa_me13/?utm_source=qr&igshid=OGIxMTE0OTdkZA%3D%3D"><img src="../_pages/instagram.png" alt="Instagram" style="width:42px;height:42px;"></a>
 </center>
 
+<hr>
 
 <p align="center"> " No tresure is worth as much as the Good that can be done with it." </p>
