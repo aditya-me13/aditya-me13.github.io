@@ -1,10 +1,10 @@
 ---
 layout: archive
 title: "INTERNSHIPS"
-permalink: /internships/
+permalink: /interns/
 author_profile: true
 redirect_from:
-  - /internships
+  - /
 ---
 
 {% include base_path %}
