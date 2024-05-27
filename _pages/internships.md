@@ -4,10 +4,10 @@ title: "INTERNSHIPS"
 permalink: /interns/
 author_profile: true
 redirect_from:
-  - /
+  - /interns
 ---
 
-{% include base_path %}
+<!-- {% include base_path %} -->
 -----
 -----
 
