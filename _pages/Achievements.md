@@ -15,7 +15,8 @@ redirect_from:
 University Rankings:
 ======
 * Awarded [Dean’s List](https://www.iitgn.ac.in/students/deanslist) for Academic Excellence for **All 4 eligible semesters** at IIT Gandhinagar.
-* Ranked 4th among the entire batch (across all branches) at the end of my first year.
+* Ranked 4th among the entire batch (across all branches) at the end of my freshman year.
+* Winner of "Introdunction to Latex" Contest conducted by Student Academic Council, IIT Gandhinagar.
   
 Admission Test Rankings:
 ======
