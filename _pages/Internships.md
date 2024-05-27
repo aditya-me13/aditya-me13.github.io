@@ -11,8 +11,8 @@ redirect_from:
 -----
 -----
 
-
-## [Kapidhwaj AI](https://www.kapidhwaj.ai/) | Machine Learning and AI Developer Intern
+[Kapidhwaj AI](https://www.kapidhwaj.ai/) | Machine Learning and AI Developer Intern
+=====
 Industrial Intern | Research Park, Gandhinagar | _May '24 - Current_
 
 ### Goals:
