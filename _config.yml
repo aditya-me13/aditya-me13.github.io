@@ -9,9 +9,9 @@
 # Basic Site Settings
 locale                   : "en-US"
 title                    : "Aditya's Homepage"
-title_separator          : "-"
+title_separator          : "--------"
 name                     : &name "Aditya Mehta"
-description              : &description "I am a Sophomore at IIT Gandhinagar studying Computer Science and Engineering."
+description              : &description "Engineering Luck"
 url                      : https://aditya-me13.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "aditya-me13/aditya-me13.github.io"
@@ -24,7 +24,7 @@ author:
   avatar           : "Profile_3.jpeg"
   name             : "Aditya Mehta"
   pronouns         : #"he/him"  
-  bio              : "I am a Sophomore at IIT Gandhinagar studying Computer Science and Engineering."
+  bio              : "Engineering Luck"
   location         : "Gandhinagar"
   employer         : "Indian Institute of Technology"
   uri              : # URL
