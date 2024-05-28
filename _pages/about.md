@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hi There 👋! I am Aditya Mehta."
+title: "Hello! I am Aditya Mehta."
 author_profile: true
 redirect_from: 
   - /about/
@@ -13,14 +13,14 @@ About Me:
 -----
 I am currently a sophomore at one of the most prestigious technological institutes, **Indian Institute of Technology Gandhinagar**, majoring in Computer Science and Engineering.
 
--	I am currently mastering my skills in Machine Learning to solve real-life problems and Software Development. I like CODING.
+-	I am currently mastering my skills in Data Structures and Algorithms for Software Development and Machine Learning to solve real-life problems. I like CODING.
 - I am also exploring fields of Data Science, Digital Signal Processing and Hardware Implementation within Computer Architecture.
 -	Fun fact: I love delving into various domains of Computer Science, but I too lazy to find a balance between them.
 <hr>
 
 Recent News:
 -----
-**27th May 2024** : I started my Internship at [Kapidhwaj AI](https://www.kapidhwaj.ai/) security solutions as an AI/ML developer. [Know more](https://aditya-me13.github.io/interns/).
+**27th May 2024** : I started my Internship at [Kapidhwaj AI](https://www.kapidhwaj.ai/) security solutions as an AI-ML developer. [Know more](https://aditya-me13.github.io/interns/).
 
 **24th April 2024** : Our team successfully completed the Project on Image Processing Toolbox on FPGA. [Know more](https://aditya-me13.github.io/Projects/IPT).
 
@@ -68,3 +68,5 @@ For even more info:
 ------
 Reach out to me :)
 <hr>
+
+<h1><center> "There is no treasure worth as much as the Good that can be done with it" </center></h1>
