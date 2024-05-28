@@ -69,4 +69,4 @@ For even more info:
 Reach out to me :)
 <hr>
 
-<h1><center> "There is no treasure worth as much as the Good that can be done with it" </center></h1>
+<h3><center> "There is no treasure worth as much as the Good that can be done with it" </center></h3>
