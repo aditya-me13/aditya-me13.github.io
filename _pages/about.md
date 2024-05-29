@@ -55,10 +55,10 @@ Hobbies and Interests:
 
 - Apart from passion for engineering, I like music, food, **garba** and travelling. But my absolute favorite pastime? Without a doubt, it's hibernating. They say you need more sleep to complete your Big Dreams.
 - When it comes to entertainment, I'm an huge fan of the "**Wizarding-World**", "**Marvel-Cinematic-Universe**" and "**FRIENDS**". They never fail to ignite my imagination and keep me thoroughly entertained.
-- Bollywood movies and songs inseperable part of my life. If you're someone who gets jumps aloud when I shout "Pani," then we're definitely on the same wavelength!
-- A figure who has truly inspired me is **Mr. Dilip Joshi**, fondly known as **Jethalal**. His portrayal always manages to bring a smile to my face, even during the toughest of times. Hopefully I will get the previlage to shake hands with him some day. No Doubt, I like "Tarak Mehta ka Oolta Chashma" than anything else.
+- Bollywood movies and songs are inseperable part of my life. If you're someone who gets jumps aloud when I shout "Pani," then we're definitely on the same wavelength!
+- A figure who has truly inspired me is **Mr. Dilip Joshi**, fondly known as **Jethalal**. His portrayal always manages to bring a smile to my face, even during the toughest of times. Hopefully I will get the previlage to shake hands with him some day. No Doubt, I like "Tarak Mehta ka Oolta Chashma" more than anything else.
 - I find immense joy in activities like **Video Editing** and **Graphic Designing**—they're more than just hobbies to me; they're a form of artistic expression.
-- While I prefer to keep my life organized and clean, there's something comforting about the chaos of a messy cupboard and tousled hair. I confess, I have quite the sweet tooth—I simply can't resist ice-creams!!
+- While I prefer to keep my life organized and clean, there's something comforting about the chaos of a messy cupboard and messy hair. I confess, I have quite the sweet tooth—I simply can't resist ice-creams!!
 - Like most Indians, cricket holds a special place in my heart, but I also enjoy lawn tennis and badminton for some recreational fun.
 - I have a deep appreciation for the beauty of Hindi and Urdu poetry, the soulful lyrics of Gujarati folk music, and the wisdom found in English quotes and phrases.
 
