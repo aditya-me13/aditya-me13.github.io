@@ -15,7 +15,7 @@ I am currently a sophomore at one of the most prestigious technological institut
 
 -	I am currently mastering my skills in Data Structures and Algorithms for Software Development and Machine Learning to solve real-life problems. I like CODING.
 - I am also exploring fields of Data Science, Digital Signal Processing and Hardware Implementation within Computer Architecture.
--	Fun fact: I love delving into various domains of Computer Science, but I too lazy to find a balance between them.
+-	Fun fact: I love delving into various domains of Computer Science, but I am too lazy to find a balance between them.
 <hr>
 
 Recent News:
