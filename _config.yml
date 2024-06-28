@@ -23,7 +23,7 @@ author:
   # Biographic information
   avatar           : "Profile_3.jpeg"
   name             : "Aditya Mehta"
-  pronouns         : #"he/him"  
+  pronouns         : "he/him"  
   bio              : "Engineering Luck"
   location         : "Gandhinagar"
   employer         : "Indian Institute of Technology"
@@ -55,8 +55,8 @@ author:
   google_plus      : # Username
   keybase          : # Username
   instagram        : "adityaa_me13"
-  lastfm           : # Username
-  linkedin         : "aditya-mehta-6ba290256" 
+  leetcode         : "aditya-me13"
+  linkedin         : "aditya-me13" 
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username

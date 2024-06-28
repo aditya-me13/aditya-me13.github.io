@@ -40,6 +40,11 @@ Skills
 * __Libraries__ : NumPy, Pandas, Sklearn, Scipy, Matplotlib, Seaborn, Tensorflow
 * __Other Tools__ : Xilinx Vivado, Git, Autodesk Inventor, Adobe Creative suite, Arduino IDE, Linux, LATEX
 
+Miscallaneous
+======
+* Solved over 200+ questions on platforms like [LeetCode](https://leetcode.com/u/aditya-me13/) and [GeekforGeeks](https://www.geeksforgeeks.org/user/aditya_me13/) combined with an average acceptance rate of more than 70%.
+* 10+ solutions posted with a unique approach on [LeetCode](https://leetcode.com/u/aditya-me13/) which has 650+ views combined.
+
 <!-- Publications
 ======
   <ul>{% for post in site.publications reversed %}
