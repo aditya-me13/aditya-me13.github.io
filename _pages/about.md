@@ -13,7 +13,7 @@ About Me:
 -----
 Hello! My name is Aditya Mehta and currently I am striving to make "Hello World" my new "ABC".
 
-- I am currently a sophomore at one of the most prestigious technological institutes, **Indian Institute of Technology Gandhinagar**, majoring in Computer Science and Engineering.
+- I am currently a junior Undergraduate at one of the most prestigious technological institutes, **Indian Institute of Technology Gandhinagar**, majoring in Computer Science and Engineering.
 -	I am currently mastering my skills in Data Structures and Algorithms for Software Development and Machine Learning to solve real-life problems. I like CODING.
 - I am also exploring fields of Data Science, Digital Signal Processing and Hardware Implementation within Computer Architecture.
 -	Fun fact: I love delving into various domains of Computer Science, but I am too lazy to find a balance between them.
