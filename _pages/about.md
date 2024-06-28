@@ -11,7 +11,7 @@ redirect_from:
 
 About Me:
 -----
-Hello! My name is Aditya Mehta and currently I am striving to make "Hello World" my new "ABC".
+Hello! My name is Aditya Mehta and I am trying to make "Hello World" my new "ABC".
 
 - I am currently a junior Undergraduate at one of the most prestigious technological institutes, **Indian Institute of Technology Gandhinagar**, majoring in Computer Science and Engineering.
 -	I am currently mastering my skills in Data Structures and Algorithms for Software Development and Machine Learning to solve real-life problems. I like CODING.
