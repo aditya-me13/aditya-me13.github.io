@@ -23,11 +23,11 @@ author:
   # Biographic information
   avatar           : "Profile_3.jpeg"
   name             : "Aditya Mehta"
-  # pronouns         : "he/him"  
+  pronouns         : "he/him"  
   bio              : "Engineering Luck"
-  location         : "Gandhinagar"
-  employer         : "Indian Institute of Technology"
+  employer         : "IIT Gandhinagar"
   uri              : # URL
+  location         : "Mandvi, Kutch"
   email            : "aditya.mehta@iitgn.ac.in" 
 
   # Academic websites
