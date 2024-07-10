@@ -23,7 +23,7 @@ main:
     url: /pors/
 
   - title: "My Resume"
-    url: /files/Resume.pdf
+    url: /files/resume.pdf
 
   - title: "Contact Me"
     url: /reach
