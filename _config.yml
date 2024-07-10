@@ -23,7 +23,7 @@ author:
   # Biographic information
   avatar           : "Profile_3.jpeg"
   name             : "Aditya Mehta"
-  pronouns         : "he/him"  
+  pronouns         : #"he/him"  
   bio              : "Engineering Luck"
   employer         : "IIT Gandhinagar"
   uri              : # URL
