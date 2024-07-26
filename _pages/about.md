@@ -20,9 +20,9 @@ Hello! My name is Aditya Mehta and I am trying to make "Hello World" my new "ABC
 
 Recent News:
 -----
-**27th May 2024** : I started my Internship at [Kapidhwaj AI](https://www.kapidhwaj.ai/) security solutions as an AI-ML developer. [Know more](https://aditya-me13.github.io/interns/).
+**20th July 2024** : I completed my Internship at [Kapidhwaj AI](https://www.kapidhwaj.ai/) security solutions as an AI-ML developer. [Know more](https://aditya-me13.github.io/interns/).
 
-**24th April 2024** : Our team successfully completed the Project on Image Processing Toolbox on FPGA. [Know more](https://aditya-me13.github.io/Projects/IPT).
+**7th July 2024** : I was certified with Associate Google Cloud Engineer-Google Cloud Certification on Udemy. [Certificate](https://www.udemy.com/certificate/UC-b5a53396-ff92-4d48-aa8f-d44e43540f34/)
 
 **2nd April 2024** : I was awarded with **Prof. G. V. Rao Scholarship** for excellent academic performance and exemplary potential.
 
