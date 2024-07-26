@@ -16,7 +16,7 @@ redirect_from:
 Industrial Intern | Research Park, Gandhinagar | _May '24 - July -24_
 
 ### Goals:
-- Build a scalable face recognition pipeline using python libraries, ensuring high accuracy and low latency. | [Demo](https://github.com/aditya-me13/Face_Recognition)
+- Build a scalable face recognition pipeline using python libraries, ensuring high accuracy and low latency. [Demo](https://github.com/aditya-me13/Face_Recognition)
 - Configured **Yolov8n** and **Arcface** models to achieve high accuracy, alongside integrating the **ChromaDB** vector
 database to store and retrieve embeddings more efficiently, significantly enhancing overall processing speed.
 - Containerized the entire project into a **Docker Image** and used this to build containers on **Google Virtual Machines**.

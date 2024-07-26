@@ -27,7 +27,7 @@ Admission Test Rankings:
 Schilarships and Certifications:
 =====
 * Awarded **Prof. G. V. Rao National Scholarship** of Rs. 1 Lakh for excellent Academic Performance and exemplary potential.
-* Certified **Associate Google Cloud Engineer**, proficient in GCP services and best practices by Udemy | [Certificate](https://www.udemy.com/certificate/UC-b5a53396-ff92-4d48-aa8f-d44e43540f34/)
+* Certified **Associate Google Cloud Engineer**, proficient in GCP services and best practices by Udemy. [Certificate](https://www.udemy.com/certificate/UC-b5a53396-ff92-4d48-aa8f-d44e43540f34/)
 
 <!-- Projects:
 ======

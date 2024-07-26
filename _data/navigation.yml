@@ -8,11 +8,11 @@ main:
   #   url: /year-archive/
 
   # - title: "Internships"
-     # url: /interns/
+  # url: /interns/
   
   - title: "Internships"
     url: /interns/
-     
+
   - title: "Projects"
     url: /Projects/ 
 
