@@ -29,7 +29,7 @@ Schilarships and Certifications:
 =====
 * Awarded **Acharya Ekkirala Bharadwaja Scholarship** of Rs. 1 Lakh for excellent Academic Performance and Exemplary Potential for Academic Year 2023-24. [Website](https://iitgn.ac.in/students/scholarships/Acharya-Ekkirala-Bharadwaja-Scholarship)
 * Certified **Associate Google Cloud Engineer**, proficient in GCP services and best practices by Udemy. [Certificate](https://www.udemy.com/certificate/UC-b5a53396-ff92-4d48-aa8f-d44e43540f34/)
-* Successfully completed an internship at Kapidhwaj AI and received certification as an AI-ML Engineer. [Certificate](/files/Certificate.pdf)
+* Successfully completed an internship at Kapidhwaj AI and received certification as an AI-ML Engineer. [Certificate](/files/AdityaMehta.pdf)
 
 Skills
 ======
