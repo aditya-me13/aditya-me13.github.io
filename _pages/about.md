@@ -14,19 +14,23 @@ Hello! My name is Aditya Mehta and I am trying to make "Hello World" my new "ABC
 
 - I am currently a junior Undergraduate at one of the most prestigious technological institutes, **Indian Institute of Technology Gandhinagar**, majoring in Computer Science and Engineering.
 -	I am currently mastering my skills in Data Structures and Algorithms for Software Development and Machine Learning to solve real-life problems. I like CODING.
+- I am fascinated by the intersection of Technology and Finance, and currently exploring trading technologies and understanding markets.
 - I am also exploring fields of Data Science, Digital Signal Processing and Hardware Implementation within Computer Architecture.
 -	Fun fact: I love delving into various domains of Computer Science, but I am too lazy to find a balance between them.
+
 <hr>
 
 Recent News:
+
 -----
-**20th July 2024** : I completed my Internship at [Kapidhwaj AI](https://www.kapidhwaj.ai/) security solutions as an AI-ML developer. [Know more](https://aditya-me13.github.io/interns/).
+**22nd August 2024** : I secured Internship for Investment Banking Quants role at [Barclays](https://www.barclays.in/) for Summer of Year 2025.
+
+**20th August 2024** : I was selected as Class Representative (CR) for Computer Science Branch (CSE) for Academic Year 2024-25.
+
+**20th July 2024** : I completed my Internship at [Kapidhwaj AI](https://www.kapidhwaj.ai/) security solutions as an AI-ML developer. [Know More](https://aditya-me13.github.io/interns/)
 
 **7th July 2024** : I was certified with Associate Google Cloud Engineer-Google Cloud Certification on Udemy. [Certificate](https://www.udemy.com/certificate/UC-b5a53396-ff92-4d48-aa8f-d44e43540f34/)
 
-**2nd April 2024** : I was awarded with **Prof. G. V. Rao Scholarship** for excellent academic performance and exemplary potential.
-
-**18th March 2024** : Our team of 100+ members successfully conducted **Gujarat's largest student-run cultural fest**.
 <hr>
 
 Education:
@@ -34,7 +38,7 @@ Education:
 
 | Degree | Specialization | Institute | Year | CPI/% |
 | --- | --- | --- | --- | --- | 
-| B.Tech. | _Computer Science and Engineering_| IIT Gandhinagar| 2022-Present| 9.32/10| 
+| B.Tech. | _Computer Science and Engineering_| IIT Gandhinagar| 2022-Present| 9.34/10| 
 | Class XII  | _Physics, Chemistry, Maths_| St. Xavier's High School, Adipur| 2021-2022 | 94.25 %| 
 | Class X | | Archana St. Xavier's School, Mandvi | 2019-2020| 94.66 %| 
 

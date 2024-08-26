@@ -21,7 +21,14 @@ IIT Gandhinagar, _May '23 - Apr '24_.
 * Developed and executed comprehensive marketing strategies to increase festival visibility and attendance, leveraging social media and creative design skills to attract a larger audience and participants.
 
 ---
-  
+
+## Class Representative, Computer Science and Engineering
+IIT Gandhinagar, _August '24 - Current_.
+
+* Elected as the representative for the Computer Science Engineering department, showcasing strong leadership qualities.
+* Effectively communicated and represented the interests of a diverse batch of 70 students and acting as a comunication bridge between Student Body and Professors.
+
+---
 
 ## General Executive, PDC, Professional Development Council.
 IIT Gandhinagar, _May '24 - Current_.
@@ -32,7 +39,7 @@ IIT Gandhinagar, _May '24 - Current_.
 --- 
 
 ## Student Guide and Member, Student Support Service
-IIT Gandhinagar, _Jul '23 - Apr '24_
+IIT Gandhinagar, _Jul '23 - Apr '24_ and _July '24 - Current_.
 
 * Collaborated with a faculty-driven team to provide comprehensive support to students, addressing a wide range of concerns and issues related to college life.
 * Offered guidance and mentorship to freshman students, helping them navigate academic challenges and personal issues, fostering a supportive and inclusive campus environment.
