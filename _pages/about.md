@@ -27,7 +27,7 @@ Recent News:
 
 **20th August 2024** : I was selected as Class Representative (CR) for Computer Science Branch (CSE) for Academic Year 2024-25.
 
-**20th July 2024** : I completed my Internship at [Kapidhwaj AI](https://www.kapidhwaj.ai/) security solutions as an AI-ML developer. [Know More](https://aditya-me13.github.io/internships/)
+**20th July 2024** : I completed my Internship at [Kapidhwaj AI](https://www.kapidhwaj.ai/) security solutions as an AI-ML developer. [Know More](https://aditya-me13.github.io/Internships)
 
 **7th July 2024** : I was certified with Associate Google Cloud Engineer-Google Cloud Certification on Udemy. [Certificate](https://www.udemy.com/certificate/UC-b5a53396-ff92-4d48-aa8f-d44e43540f34/)
 
