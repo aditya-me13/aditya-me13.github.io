@@ -14,7 +14,7 @@ redirect_from:
 
 [Kapidhwaj AI](https://www.kapidhwaj.ai/) | Machine Learning and AI Developer Intern
 =====
-**Industrial Intern** | Research Park, Gandhinagar | _May '24 - July '24_ | [Certificate](/files/Certificate.pdf)
+**Industrial Intern** | Research Park, Gandhinagar | _May '24 - July '24_ | [Certificate](/files/CertificateKapidhwaj.png)
 
 ### Goals:
 - Build a scalable face recognition pipeline using python libraries, ensuring high accuracy and low latency. [Demo](https://github.com/aditya-me13/Face_Recognition)
