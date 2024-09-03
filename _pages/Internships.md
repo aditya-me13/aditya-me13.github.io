@@ -14,7 +14,7 @@ redirect_from:
 
 [Kapidhwaj AI](https://www.kapidhwaj.ai/) | Machine Learning and AI Developer Intern
 =====
-**Industrial Intern** | Research Park, Gandhinagar | _May '24 - July '24_ | [Certificate](/files/AdityaMehtaCertificate.pdf)
+**Industrial Intern** | Research Park, Gandhinagar | _May '24 - July '24_ | [Certificate](/files/Certificate.pdf)
 
 ### Goals:
 - Build a scalable face recognition pipeline using python libraries, ensuring high accuracy and low latency. [Demo](https://github.com/aditya-me13/Face_Recognition)
@@ -27,7 +27,7 @@ of various model instances via API requests. Utilized **SQLAlchemy** for efficie
 
 [Barclays](https://www.barclays.in/) | Investment Banking Quants Role
 =====
-**FinTech Intern** | Barclays Office, Noida | _May '25 - July '25_
+**FinTech Intern** | Barclays Office, Noida | _May '25 - July '25_ | [Certificate](/files/SummerInternshipBarclays.png)
 
 ### Goals:
 - Develop and maintain tools to assist the Investment Banking Team in streamlining decision-making processes.

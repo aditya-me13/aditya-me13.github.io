@@ -23,7 +23,7 @@ Hello! My name is Aditya Mehta and I am trying to make "Hello World" my new "ABC
 Recent News:
 
 -----
-**22nd August 2024** : I secured Internship for Investment Banking Quants role at [Barclays](https://www.barclays.in/) for Summer of Year 2025.
+**22nd August 2024** : I secured Internship for Investment Banking Quants role at [Barclays](https://www.barclays.in/) for Summer of Year 2025. [Certificate](/files/SummerInternshipBarclays.png)
 
 **20th August 2024** : I was selected as Class Representative (CR) for Computer Science Branch (CSE) for Academic Year 2024-25.
 
