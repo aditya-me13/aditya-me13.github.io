@@ -24,5 +24,4 @@ redirect_from:
 
 </center>
 
-  
-  
+The best way to reach out to me is to email me at **[aditya.mehta@iitgn.ac.in](mailto:aditya.mehta@iitgn.ac.in)** or **[mehtaaditya1307@gmail.com](mailto:mehtaaditya1307@gmail.com)**
