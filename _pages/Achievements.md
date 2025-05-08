@@ -1,4 +1,4 @@
- ---
+---
 layout: archive
 title: "ACHIEVEMENTS"
 permalink: /achievements/
@@ -10,7 +10,6 @@ redirect_from:
 {% include base_path %}
 -----
 -----
-
 
 University Achievements:
 ======
@@ -44,8 +43,6 @@ Miscallaneous
 * Captain of the "Wimbledon Wizards" team in the IITGN Annual **Lawn Tennis Masters Cup 2025**, finishing as the runner-up team.
 * Winner of "Introdunction to Latex" Contest conducted by Student Academic Council, IIT Gandhinagar.
 
-
-<!-- * Solved over 3000+ questions on platforms like [LeetCode](https://leetcode.com/u/aditya-me13/) and [GeekforGeeks](https://www.geeksforgeeks.org/user/aditya_me13/) combined with an average acceptance rate of more than 70%. -->
 <!-- Projects:
 ======
   <ul>{% for post in site.teaching reversed %}
