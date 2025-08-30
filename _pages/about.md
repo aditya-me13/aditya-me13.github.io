@@ -19,10 +19,10 @@ redirect_from:
 
   /* News Carousel Container */
   .news-carousel-container {
+    position: relative;
     width: 100%;
     overflow: hidden;
-    position: relative;
-    border-left: 5px solid rgb(71, 154, 227); /* Updated */
+    border-left: 5px solid rgb(71, 154, 227);
     background-color: #f8f9fa;
     padding: 20px;
     box-sizing: border-box;
@@ -32,18 +32,45 @@ redirect_from:
     min-height: 80px;
   }
 
+  /* News Carousel Content Wrapper */
+  .news-carousel-wrapper {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+  }
+
   /* News Carousel Items */
   .news-carousel-item {
-    display: none;
+    min-width: 100%;
     text-align: center;
     font-size: 1.1em;
     font-weight: 500;
   }
   
-  .news-carousel-item.active {
-    display: block;
+  /* Arrow styling */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #6c757d;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
   }
-
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.2);
+  }
+  
   /* Navigation Dots */
   .carousel-dots {
     text-align: center;
@@ -62,31 +89,7 @@ redirect_from:
   }
 
   .dot.active {
-    background-color: rgb(71, 154, 227); /* Updated */
-  }
-
-  /* General list and table styling for a cleaner look */
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 10px 0;
-  }
-
-  table th, table td {
-    padding: 12px;
-    border: 1px solid #dee2e6;
-    text-align: left;
-  }
-
-  table th {
-    background-color: #e9ecef;
-    font-weight: bold;
-  }
-
-  .intro-text {
-    margin-bottom: 20px;
-    line-height: 1.6;
-    color: #555;
+    background-color: rgb(71, 154, 227);
   }
 </style>
 
@@ -106,21 +109,25 @@ redirect_from:
 
 <h2>Recent News:</h2>
 <div class="news-carousel-container">
-  <div class="news-carousel-item active">
-    <strong>22nd August 2024</strong> : I secured Internship for Investment Banking Quants role at <a href="https://www.barclays.in/">Barclays</a> for Summer of Year 2025. <a href="/files/SummerInternshipBarclays.png">[Certificate]</a>
+  <div class="news-carousel-wrapper">
+    <div class="news-carousel-item">
+      <strong>22nd August 2024</strong> : I secured Internship for Investment Banking Quants role at <a href="https://www.barclays.in/">Barclays</a> for Summer of Year 2025. <a href="/files/SummerInternshipBarclays.png">[Certificate]</a>
+    </div>
+    <div class="news-carousel-item">
+      <strong>20th August 2024</strong> : I was selected as Class Representative (CR) for Computer Science Branch (CSE) for Academic Year 2024-25.
+    </div>
+    <div class="news-carousel-item">
+      <strong>20th July 2024</strong> : I completed my Internship at <a href="https://www.kapidhwaj.ai/">Kapidhwaj AI</a> security solutions as an AI-ML developer. <a href="https://aditya-me13.github.io/Internships">[Know More]</a>
+    </div>
+    <div class="news-carousel-item">
+      <strong>7th July 2024</strong> : I was certified with Associate Google Cloud Engineer-Google Cloud Certification on Udemy. <a href="https://www.udemy.com/certificate/UC-b5a53396-ff92-4d48-aa8f-d44e43540f34/">[Certificate]</a>
+    </div>
   </div>
-  <div class="news-carousel-item">
-    <strong>20th August 2024</strong> : I was selected as Class Representative (CR) for Computer Science Branch (CSE) for Academic Year 2024-25.
-  </div>
-  <div class="news-carousel-item">
-    <strong>20th July 2024</strong> : I completed my Internship at <a href="https://www.kapidhwaj.ai/">Kapidhwaj AI</a> security solutions as an AI-ML developer. <a href="https://aditya-me13.github.io/Internships">[Know More]</a>
-  </div>
-  <div class="news-carousel-item">
-    <strong>7th July 2024</strong> : I was certified with Associate Google Cloud Engineer-Google Cloud Certification on Udemy. <a href="https://www.udemy.com/certificate/UC-b5a53396-ff92-4d48-aa8f-d44e43540f34/">[Certificate]</a>
-  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 <div class="carousel-dots">
-  <span class="dot active" onclick="currentSlide(0)"></span>
+  <span class="dot" onclick="currentSlide(0)"></span>
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
@@ -195,35 +202,47 @@ redirect_from:
 <script>
   let slideIndex = 0;
   let carouselInterval;
+  const wrapper = document.querySelector('.news-carousel-wrapper');
   const items = document.getElementsByClassName("news-carousel-item");
   const dots = document.getElementsByClassName("dot");
 
-  function showSlides() {
-    for (let i = 0; i < items.length; i++) {
-      items[i].classList.remove("active");
-      dots[i].classList.remove("active");
+  // Function to show a specific slide
+  function showSlides(n) {
+    if (n >= items.length) {
+      slideIndex = 0; // Wraps to the first slide
+    } else if (n < 0) {
+      slideIndex = items.length - 1; // Wraps to the last slide
+    } else {
+      slideIndex = n;
     }
-    slideIndex++;
-    if (slideIndex > items.length) {
-      slideIndex = 1;
+
+    // Apply the slide transformation
+    wrapper.style.transform = `translateX(${-slideIndex * 100}%)`;
+
+    // Update dots
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
     }
-    items[slideIndex - 1].classList.add("active");
-    dots[slideIndex - 1].classList.add("active");
+    dots[slideIndex].className += " active";
   }
 
+  // Function for next/previous arrows
+  function plusSlides(n) {
+    clearInterval(carouselInterval);
+    showSlides(slideIndex + n);
+    carouselInterval = setInterval(() => showSlides(slideIndex + 1), 7000);
+  }
+
+  // Function for dot navigation
   function currentSlide(n) {
     clearInterval(carouselInterval);
-    slideIndex = n;
-    for (let i = 0; i < items.length; i++) {
-      items[i].classList.remove("active");
-      dots[i].classList.remove("active");
-    }
-    items[slideIndex].classList.add("active");
-    dots[slideIndex].classList.add("active");
-    carouselInterval = setInterval(showSlides, 7000);
+    showSlides(n);
+    carouselInterval = setInterval(() => showSlides(slideIndex + 1), 7000);
   }
 
-  // Initial call and start the interval
-  showSlides();
-  carouselInterval = setInterval(showSlides, 7000);
+  // Initial setup and auto-scroll
+  document.addEventListener('DOMContentLoaded', () => {
+    showSlides(slideIndex);
+    carouselInterval = setInterval(() => showSlides(slideIndex + 1), 7000);
+  });
 </script>
