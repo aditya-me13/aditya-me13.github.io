@@ -12,7 +12,7 @@ redirect_from:
 <style>
   /* Styling for the main section headings */
   h2 {
-    color:rgb(45, 104, 196); /* A nice blue for the main headings */
+    color: rgb(71, 154, 227); /* A nice blue for the main headings */
     font-size: 1.5em; /* A slightly smaller font size */
     border-bottom: 2px solid #e9ecef; /* A light border for separation */
     padding-bottom: 5px;
@@ -38,13 +38,13 @@ redirect_from:
   }
   
   details > summary::before {
-    content: '▶ ';
-    color: rgb(45, 104, 196); /* Blue color for the arrow */
+    content: '▶  ';
+    color: rgb(71, 154, 227); /* Blue color for the arrow */
     display: inline-block;
     transition: transform 0.2s;
     font-size: 0.9em;
     font-weight: normal;
-    padding-right: 5px; /* Adds space after the arrow */
+    padding-right: 7px; /* Adds space after the arrow */
   }
 
   details[open] > summary::before {
@@ -162,7 +162,7 @@ Below is a compilation of various Positions of Responsibility (PoRs) I have unde
 </details>
 
 <details>
-  <summary><strong>General Executive</strong> – Professional Development Council (PDC)</summary>
+  <summary><strong>General Executive</strong> – Professional Development Council</summary>
   <div class="accordion-content">
     <p><em>(May 2024 – Mar 2025, IIT Gandhinagar)</em></p>
     <ul>
@@ -173,7 +173,7 @@ Below is a compilation of various Positions of Responsibility (PoRs) I have unde
 </details>
 
 <details>
-  <summary><strong>General Executive</strong> - TedxIITGandhinagar</summary>
+  <summary><strong>General Executive</strong> - Tedx IITGandhinagar</summary>
   <div class="accordion-content">
     <p><em>(Aug 2023 - Mar 2024, IIT Gandhinagar)</em></p>
     <ul>
