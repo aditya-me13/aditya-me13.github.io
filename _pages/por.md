@@ -12,7 +12,7 @@ redirect_from:
 <style>
   /* Styling for the main section headings */
   h2 {
-    color: #6c757d; /* A subtle gray for the main headings */
+    color:rgb(45, 104, 196); /* A nice blue for the main headings */
     font-size: 1.5em; /* A slightly smaller font size */
     border-bottom: 2px solid #e9ecef; /* A light border for separation */
     padding-bottom: 5px;
@@ -39,6 +39,7 @@ redirect_from:
   
   details > summary::before {
     content: '▶ ';
+    color: rgb(45, 104, 196); /* Blue color for the arrow */
     display: inline-block;
     transition: transform 0.2s;
     font-size: 0.9em;
@@ -83,6 +84,8 @@ redirect_from:
     left: 0;
   }
 </style>
+
+Below is a compilation of various Positions of Responsibility (PoRs) I have undertaken during my academic journey. These roles have allowed me to develop leadership skills, enhance my organizational abilities, and contribute positively to my community. Click on each role to expand and learn more about my responsibilities and what I accomplished in each position.
 
 ## **Technical & Academic Roles**
 
@@ -148,23 +151,23 @@ redirect_from:
 ## **Community & Executive Roles**
 
 <details>
-  <summary><strong>General Executive</strong> – Professional Development Council (PDC)</summary>
-  <div class="accordion-content">
-    <p><em>(May 2024 – Mar 2025, IIT Gandhinagar)</em></p>
-    <ul>
-      <li>Contributed to the organization of career-enhancing workshops on resume building, interview preparation, and mock testing.</li>
-      <li>Acted as a vital communication bridge between the student body and placement cell, streamlining feedback and grievance redressal.</li>
-    </ul>
-  </div>
-</details>
-
-<details>
   <summary><strong>Class Representative</strong> – Computer Science and Engineering</summary>
   <div class="accordion-content">
     <p><em>(Aug 2024 – Apr 2025, IIT Gandhinagar)</em></p>
     <ul>
       <li>Elected as the official representative of a 70-member cohort.</li>
       <li>Facilitated effective communication between students and faculty, voicing academic concerns and feedback for collective well-being.</li>
+    </ul>
+  </div>
+</details>
+
+<details>
+  <summary><strong>General Executive</strong> – Professional Development Council (PDC)</summary>
+  <div class="accordion-content">
+    <p><em>(May 2024 – Mar 2025, IIT Gandhinagar)</em></p>
+    <ul>
+      <li>Contributed to the organization of career-enhancing workshops on resume building, interview preparation, and mock testing.</li>
+      <li>Acted as a vital communication bridge between the student body and placement cell, streamlining feedback and grievance redressal.</li>
     </ul>
   </div>
 </details>
