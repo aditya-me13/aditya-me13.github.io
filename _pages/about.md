@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 <style>
-  /* Styling for the main section headings */
+  /* Main heading styling */
   h2 {
     color: rgb(71, 154, 227);
     font-size: 1.5em;
@@ -32,7 +32,7 @@ redirect_from:
     min-height: 80px;
   }
 
-  /* News Carousel Content Wrapper */
+  /* News Carousel Wrapper */
   .news-carousel-wrapper {
     display: flex;
     transition: transform 0.6s ease-in-out;
@@ -54,21 +54,27 @@ redirect_from:
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: #6c757d;
+    color: rgb(71, 154, 227);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
     user-select: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    z-index: 10;
   }
-  
+
   .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev {
+    left: 0;
   }
   
   .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.1);
   }
   
   /* Navigation Dots */
@@ -109,6 +115,7 @@ redirect_from:
 
 <h2>Recent News:</h2>
 <div class="news-carousel-container">
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <div class="news-carousel-wrapper">
     <div class="news-carousel-item">
       <strong>22nd August 2024</strong> : I secured Internship for Investment Banking Quants role at <a href="https://www.barclays.in/">Barclays</a> for Summer of Year 2025. <a href="/files/SummerInternshipBarclays.png">[Certificate]</a>
@@ -123,7 +130,6 @@ redirect_from:
       <strong>7th July 2024</strong> : I was certified with Associate Google Cloud Engineer-Google Cloud Certification on Udemy. <a href="https://www.udemy.com/certificate/UC-b5a53396-ff92-4d48-aa8f-d44e43540f34/">[Certificate]</a>
     </div>
   </div>
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 <div class="carousel-dots">
@@ -200,49 +206,62 @@ redirect_from:
 <h3><center> "There is no treasure worth as much as the Good that can be done with it" </center></h3>
 
 <script>
-  let slideIndex = 0;
-  let carouselInterval;
-  const wrapper = document.querySelector('.news-carousel-wrapper');
-  const items = document.getElementsByClassName("news-carousel-item");
-  const dots = document.getElementsByClassName("dot");
-
-  // Function to show a specific slide
-  function showSlides(n) {
-    if (n >= items.length) {
-      slideIndex = 0; // Wraps to the first slide
-    } else if (n < 0) {
-      slideIndex = items.length - 1; // Wraps to the last slide
-    } else {
-      slideIndex = n;
-    }
-
-    // Apply the slide transformation
-    wrapper.style.transform = `translateX(${-slideIndex * 100}%)`;
-
-    // Update dots
-    for (let i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    dots[slideIndex].className += " active";
-  }
-
-  // Function for next/previous arrows
-  function plusSlides(n) {
-    clearInterval(carouselInterval);
-    showSlides(slideIndex + n);
-    carouselInterval = setInterval(() => showSlides(slideIndex + 1), 7000);
-  }
-
-  // Function for dot navigation
-  function currentSlide(n) {
-    clearInterval(carouselInterval);
-    showSlides(n);
-    carouselInterval = setInterval(() => showSlides(slideIndex + 1), 7000);
-  }
-
-  // Initial setup and auto-scroll
   document.addEventListener('DOMContentLoaded', () => {
+    let slideIndex = 0;
+    let carouselInterval;
+
+    const wrapper = document.querySelector('.news-carousel-wrapper');
+    const items = document.getElementsByClassName("news-carousel-item");
+    const dotsContainer = document.querySelector('.carousel-dots');
+
+    // Generate dots dynamically
+    dotsContainer.innerHTML = "";
+    for (let i = 0; i < items.length; i++) {
+      const dot = document.createElement("button");
+      dot.classList.add("dot");
+      dot.addEventListener("click", () => currentSlide(i));
+      dotsContainer.appendChild(dot);
+    }
+    const dots = dotsContainer.getElementsByClassName("dot");
+
+    const showSlides = (n) => {
+      if (n >= items.length) {
+        slideIndex = 0;
+      } else if (n < 0) {
+        slideIndex = items.length - 1;
+      } else {
+        slideIndex = n;
+      }
+
+      wrapper.style.transform = `translateX(${-slideIndex * 100}%)`;
+
+      for (let i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+      }
+      dots[slideIndex].classList.add("active");
+    };
+
+    const resetInterval = () => {
+      clearInterval(carouselInterval);
+      carouselInterval = setInterval(() => showSlides(slideIndex + 1), 7000);
+    };
+
+    const plusSlides = (n) => {
+      showSlides(slideIndex + n);
+      resetInterval();
+    };
+
+    const currentSlide = (n) => {
+      showSlides(n);
+      resetInterval();
+    };
+
+    // Initial setup
     showSlides(slideIndex);
-    carouselInterval = setInterval(() => showSlides(slideIndex + 1), 7000);
+    resetInterval();
+
+    // Attach handlers to prev/next buttons
+    document.querySelector(".prev").addEventListener("click", () => plusSlides(-1));
+    document.querySelector(".next").addEventListener("click", () => plusSlides(1));
   });
 </script>
