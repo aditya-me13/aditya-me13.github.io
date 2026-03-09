@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Group 11 — Protective Put Strategy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-tag">Group 11 · Options Strategy</div>
+    <h1 class="hero-title">Protective<br/><em>Put</em> Strategy</h1>
+    <p class="hero-sub">Build, analyse and compare downside protection vs. naked stock exposure — interactively.</p>
+    <div class="hero-tasks">
+      <span class="task-pill">① Construct Portfolio</span>
+      <span class="task-pill">② Analyse Downside</span>
+      <span class="task-pill">③ Compare Unhedged</span>
+    </div>
+    <div class="scroll-hint">scroll to explore ↓</div>
+  </header>
+
+  <!-- NAV TABS -->
+  <nav class="tab-nav" id="tabNav">
+    <button class="tab-btn active" data-tab="construct">Construct</button>
+    <button class="tab-btn" data-tab="payoff">Payoff Chart</button>
+    <button class="tab-btn" data-tab="compare">Compare</button>
+    <button class="tab-btn" data-tab="explainer">Explainer</button>
+  </nav>
+
+  <main class="content">
+
+    <!-- ══════════ TAB 1: CONSTRUCT ══════════ -->
+    <section class="tab-panel active" id="tab-construct">
+      <div class="panel-header">
+        <h2>① Construct the Portfolio</h2>
+        <p>Tune the parameters below to build your protective put position.</p>
+      </div>
+      <div class="construct-grid">
+        <div class="card controls-card">
+          <h3>Parameters</h3>
+          <label>Stock Price (S₀)
+            <div class="slider-row">
+              <input type="range" id="stockPrice" min="50" max="200" value="100" step="1"/>
+              <span class="val" id="stockPriceVal">$100</span>
+            </div>
+          </label>
+          <label>Strike Price (K)
+            <div class="slider-row">
+              <input type="range" id="strikePrice" min="50" max="200" value="95" step="1"/>
+              <span class="val" id="strikePriceVal">$95</span>
+            </div>
+          </label>
+          <label>Put Premium (P)
+            <div class="slider-row">
+              <input type="range" id="putPremium" min="1" max="30" value="5" step="0.5"/>
+              <span class="val" id="putPremiumVal">$5.00</span>
+            </div>
+          </label>
+          <label>Number of Shares
+            <div class="slider-row">
+              <input type="range" id="numShares" min="1" max="100" value="10" step="1"/>
+              <span class="val" id="numSharesVal">10</span>
+            </div>
+          </label>
+        </div>
+
+        <div class="card summary-card">
+          <h3>Portfolio Summary</h3>
+          <div class="summary-grid">
+            <div class="stat-block">
+              <div class="stat-label">Total Stock Cost</div>
+              <div class="stat-value" id="totalStockCost">$1,000</div>
+            </div>
+            <div class="stat-block">
+              <div class="stat-label">Total Put Cost</div>
+              <div class="stat-value" id="totalPutCost">$50</div>
+            </div>
+            <div class="stat-block highlight">
+              <div class="stat-label">Total Investment</div>
+              <div class="stat-value" id="totalInvestment">$1,050</div>
+            </div>
+            <div class="stat-block">
+              <div class="stat-label">Max Loss (hedged)</div>
+              <div class="stat-value loss" id="maxLoss">-$100</div>
+            </div>
+            <div class="stat-block">
+              <div class="stat-label">Break-even Price</div>
+              <div class="stat-value" id="breakEven">$105.00</div>
+            </div>
+            <div class="stat-block">
+              <div class="stat-label">Protection Floor</div>
+              <div class="stat-value" id="protectionFloor">$95</div>
+            </div>
+          </div>
+          <div class="protection-bar-wrap">
+            <div class="pb-label">Downside protected</div>
+            <div class="pb-track"><div class="pb-fill" id="protectionBarFill"></div></div>
+            <div class="pb-pct" id="protectionPct">5%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ TAB 2: PAYOFF CHART ══════════ -->
+    <section class="tab-panel" id="tab-payoff">
+      <div class="panel-header">
+        <h2>② Payoff / Profit Chart</h2>
+        <p>See how the hedged portfolio behaves across all possible stock prices at expiry.</p>
+      </div>
+      <div class="chart-controls">
+        <label><input type="checkbox" id="showStock" checked/> Stock only</label>
+        <label><input type="checkbox" id="showPut" checked/> Put only</label>
+        <label><input type="checkbox" id="showPortfolio" checked/> Combined (Protective Put)</label>
+        <label><input type="checkbox" id="showProfit" checked/> Show Profit (net of costs)</label>
+      </div>
+      <div class="chart-container">
+        <canvas id="payoffCanvas"></canvas>
+        <div class="crosshair-tooltip" id="crosshairTooltip"></div>
+      </div>
+      <div class="chart-legend" id="chartLegend"></div>
+    </section>
+
+    <!-- ══════════ TAB 3: COMPARE ══════════ -->
+    <section class="tab-panel" id="tab-compare">
+      <div class="panel-header">
+        <h2>③ Hedged vs. Unhedged Comparison</h2>
+        <p>Understand the real cost of protection and what you give up in bull markets.</p>
+      </div>
+      <div class="compare-grid">
+        <div class="card scenario-card">
+          <h3>Scenario Analysis</h3>
+          <p class="hint">Set a final stock price to compare outcomes:</p>
+          <label>Final Stock Price
+            <div class="slider-row">
+              <input type="range" id="finalPrice" min="30" max="200" value="80" step="1"/>
+              <span class="val" id="finalPriceVal">$80</span>
+            </div>
+          </label>
+          <div class="compare-table">
+            <div class="ct-header"><span>Metric</span><span>Unhedged</span><span>Hedged</span></div>
+            <div class="ct-row"><span>Portfolio Value</span><span id="uValue">—</span><span id="hValue">—</span></div>
+            <div class="ct-row"><span>P&amp;L ($)</span><span id="uPnL" class="loss">—</span><span id="hPnL">—</span></div>
+            <div class="ct-row"><span>P&amp;L (%)</span><span id="uPct" class="loss">—</span><span id="hPct">—</span></div>
+            <div class="ct-row highlight"><span>Savings from Hedge</span><span>—</span><span id="savings">—</span></div>
+          </div>
+        </div>
+        <div class="card insight-card">
+          <h3>Key Insights</h3>
+          <div class="insight-block" id="insightBlock">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+      </div>
+      <div class="tradeoff-chart-wrap">
+        <h3>Cost of Protection vs. Strike Price</h3>
+        <canvas id="tradeoffCanvas"></canvas>
+      </div>
+    </section>
+
+    <!-- ══════════ TAB 4: EXPLAINER ══════════ -->
+    <section class="tab-panel" id="tab-explainer">
+      <div class="panel-header">
+        <h2>Concept Explainer</h2>
+        <p>A concise walkthrough of the protective put strategy.</p>
+      </div>
+      <div class="explainer-grid">
+        <div class="exp-card" data-idx="0">
+          <div class="exp-number">01</div>
+          <h4>What is a Protective Put?</h4>
+          <p>A protective put is an options strategy where an investor holds a <strong>long position in a stock</strong> and simultaneously buys a <strong>put option</strong> on the same stock. The put grants the right to sell the stock at the strike price, creating an insurance floor.</p>
+          <div class="formula-box">Portfolio = Stock + Put Option</div>
+        </div>
+        <div class="exp-card" data-idx="1">
+          <div class="exp-number">02</div>
+          <h4>Downside Protection</h4>
+          <p>If the stock price falls below the strike price <em>K</em>, the put option gains intrinsic value and offsets losses. The maximum loss is capped regardless of how far the stock falls.</p>
+          <div class="formula-box">Max Loss = S₀ − K + P</div>
+        </div>
+        <div class="exp-card" data-idx="2">
+          <div class="exp-number">03</div>
+          <h4>Break-even Price</h4>
+          <p>Because you pay a premium <em>P</em> for the put, the stock must rise above your initial cost plus the premium to become profitable.</p>
+          <div class="formula-box">Break-even = S₀ + P</div>
+        </div>
+        <div class="exp-card" data-idx="3">
+          <div class="exp-number">04</div>
+          <h4>Upside Remains Unlimited</h4>
+          <p>Unlike other hedging strategies, the protective put does <strong>not</strong> cap the upside. If the stock rallies, you benefit fully — you simply paid an insurance premium for the floor.</p>
+          <div class="formula-box">Profit (S<sub>T</sub> &gt; K) = S<sub>T</sub> − S₀ − P</div>
+        </div>
+        <div class="exp-card" data-idx="4">
+          <div class="exp-number">05</div>
+          <h4>Comparison: Hedged vs. Unhedged</h4>
+          <p>The unhedged investor has higher profit potential (no premium cost) but faces unlimited downside risk. The hedged investor trades a small cost for certainty of the floor. The choice depends on risk tolerance and market outlook.</p>
+          <div class="formula-box">Insurance Cost = P × N shares</div>
+        </div>
+        <div class="exp-card" data-idx="5">
+          <div class="exp-number">06</div>
+          <h4>Real-World Use Cases</h4>
+          <p>Portfolio managers use protective puts before earnings announcements, macro events, or when they want to lock in gains but maintain upside exposure. It's the options equivalent of buying home insurance.</p>
+          <div class="formula-box">Risk-adjusted return ↑ · Tail risk ↓</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>Group 11 · Protective Put Strategy · Interactive Visualizer</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
