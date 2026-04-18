@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Service Perception Study</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── CONSENT ── -->
+  <div id="screen-consent" class="screen active">
+    <div class="consent-layout">
+      <aside class="consent-aside">
+        <div class="study-label">Academic Research</div>
+        <div class="aside-rule"></div>
+        <p class="aside-meta">University Study<br>~12 minutes<br>Anonymous</p>
+      </aside>
+
+      <main class="consent-main">
+        <h1>Service Provider<br><span class="accent-text">Perception Study</span></h1>
+
+        <p class="lead-text">We are studying how people evaluate service providers across everyday domains. You will read five short scenarios and share your perceptions of each.</p>
+
+        <div class="consent-items">
+          <div class="ci"><span class="ci-num">01</span><p>Participation is voluntary and anonymous.</p></div>
+          <div class="ci"><span class="ci-num">02</span><p>No data is sent to any server — everything stays on your device.</p></div>
+          <div class="ci"><span class="ci-num">03</span><p>You may stop at any time without consequence.</p></div>
+          <div class="ci"><span class="ci-num">04</span><p>Results are downloaded as a CSV file at the end.</p></div>
+        </div>
+
+        <label class="toggle-label">
+          <input type="checkbox" id="consent-check" />
+          <span class="toggle-track"><span class="toggle-thumb"></span></span>
+          I understand and consent to participate
+        </label>
+
+        <button id="btn-start" class="btn-main" disabled>Begin →</button>
+      </main>
+    </div>
+  </div>
+
+  <!-- ── SCENARIO ── -->
+  <div id="screen-scenario" class="screen">
+    <div class="scenario-layout">
+
+      <div class="scene-left" id="scene-left">
+        <div class="scene-img-wrap">
+          <img id="scenario-img" class="scenario-img" src="" alt="Scenario image" />
+          <div class="scene-img-overlay">
+            <span class="domain-pill" id="domain-pill">Domain</span>
+            <span class="condition-pill" id="condition-pill">Provider</span>
+          </div>
+        </div>
+        <div class="scene-text">
+          <p id="scenario-text"></p>
+        </div>
+        <div class="scene-timer" id="timer-badge">0:00</div>
+      </div>
+
+      <div class="scene-right">
+        <div class="progress-row">
+          <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+          <span class="progress-label" id="progress-label">1 / 5</span>
+        </div>
+
+        <div class="qblock">
+          <div class="q-item">
+            <p class="q-label">Trust</p>
+            <p class="q-hint">1 — no trust at all &nbsp;·&nbsp; 7 — complete trust</p>
+            <div class="likert-row" data-field="trust"></div>
+          </div>
+
+          <div class="q-item">
+            <p class="q-label">Perceived Risk</p>
+            <p class="q-hint">1 — no risk &nbsp;·&nbsp; 7 — extreme risk</p>
+            <div class="likert-row" data-field="risk"></div>
+          </div>
+
+          <div class="q-item">
+            <p class="q-label">Perceived Competence</p>
+            <p class="q-hint">1 — not competent &nbsp;·&nbsp; 7 — extremely competent</p>
+            <div class="likert-row" data-field="competence"></div>
+          </div>
+
+          <div class="q-item">
+            <p class="q-label">Willingness to Pay <span class="q-hint-inline">(INR)</span></p>
+            <div class="wtp-wrap">
+              <span class="wtp-symbol">₹</span>
+              <input type="number" id="wtp-input" min="0" step="1" placeholder="0" />
+            </div>
+            <p class="wtp-hint" id="wtp-hint"></p>
+          </div>
+        </div>
+
+        <button id="btn-next" class="btn-main" disabled>Next <span id="next-label">scenario</span> →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FINAL ── -->
+  <div id="screen-final" class="screen">
+    <div class="final-layout">
+      <aside class="final-aside">
+        <div class="study-label">Final Questions</div>
+        <div class="aside-rule"></div>
+        <p class="aside-meta">Almost<br>done.</p>
+      </aside>
+
+      <main class="final-main">
+        <h2>A few things<br><span class="accent-text">about you.</span></h2>
+
+        <div class="qblock">
+          <div class="q-item">
+            <p class="q-label">General attitude toward AI</p>
+            <p class="q-hint">1 — very negative &nbsp;·&nbsp; 7 — very positive</p>
+            <div class="likert-row" data-field="ai_attitude"></div>
+          </div>
+
+          <div class="q-item">
+            <p class="q-label">Prior AI usage</p>
+            <div class="radio-row" id="prior-ai-group">
+              <label class="radio-pill"><input type="radio" name="prior_ai" value="Low" /><span>Low</span></label>
+              <label class="radio-pill"><input type="radio" name="prior_ai" value="Medium" /><span>Medium</span></label>
+              <label class="radio-pill"><input type="radio" name="prior_ai" value="High" /><span>High</span></label>
+            </div>
+          </div>
+
+          <div class="q-item inline-fields">
+            <div class="field-half">
+              <p class="q-label">Age</p>
+              <input type="number" id="age-input" class="line-input" min="18" max="99" placeholder="—" />
+            </div>
+            <div class="field-half">
+              <p class="q-label">Gender</p>
+              <select id="gender-select" class="line-input">
+                <option value="">— select —</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Non-binary</option>
+                <option>Prefer not to say</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="q-item">
+            <p class="q-label">Field of study / profession</p>
+            <input type="text" id="field-input" class="line-input wide" placeholder="e.g. Psychology, Engineering…" />
+          </div>
+        </div>
+
+        <button id="btn-submit" class="btn-main" disabled>Submit &amp; download data →</button>
+      </main>
+    </div>
+  </div>
+
+  <!-- ── DONE ── -->
+  <div id="screen-done" class="screen">
+    <div class="done-layout">
+      <div class="done-mark">✓</div>
+      <h2>Thank you.</h2>
+      <p>Your responses have been downloaded automatically.</p>
+      <p class="done-manual">Didn't download? <a id="manual-download" href="#">Click here.</a></p>
+      <div class="done-meta" id="done-meta"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
