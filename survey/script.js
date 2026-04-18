@@ -41,10 +41,10 @@ const SCENARIOS = {
     wtpPlaceholder: "",
     wtpRange: { min: 600, max: 6000 },
     AI: {
-      text: "You want your investment portfolio of ₹1 lakh to be professionally managed. An AI-powered robo-advisor analyses your financial goals, risk tolerance, and market conditions using algorithms that process thousands of data points. It automatically rebalances your holdings and generates plain-language reports explaining its recommendations."
+      text: "You want your investment portfolio of ₹1 lakh to be professionally managed. An AI-powered robo-advisor analyses your financial goals, risk tolerance, and market conditions using algorithms that process thousands of data points. It automatically rebalances your holdings and generates plain-language reports explaining its recommendations. The quoted service charge is a monthly payment."
     },
     Human: {
-      text: "You want your investment portfolio of ₹1 lakh to be professionally managed. A certified financial planner with 20 years of experience reviews your goals and situation. They provide personalised recommendations, explain the rationale behind each decision, and are available by phone or email throughout the year."
+      text: "You want your investment portfolio of ₹1 lakh to be professionally managed. A certified financial planner with 20 years of experience reviews your goals and situation. They provide personalised recommendations, explain the rationale behind each decision, and are available by phone or email throughout the year. The quoted service charge is a monthly payment."
     }
   },
   Medical: {
@@ -69,10 +69,10 @@ const SCENARIOS = {
     wtpPlaceholder: "e.g. 1,000 – 8,000",
     wtpRange: { min: 1000, max: 8000 },
     AI: {
-      text: "Your home requires security monitoring. An AI-powered system continuously analyses camera and sensor feeds using computer vision and anomaly-detection models. It distinguishes routine activity from genuine threats, sends real-time alerts, and can automatically contact emergency services if a breach is detected."
+      text: "Your home requires security monitoring. An AI-powered system continuously analyses camera and sensor feeds using computer vision and anomaly-detection models. It distinguishes routine activity from genuine threats, sends real-time alerts, and can automatically contact emergency services if a breach is detected. The quoted service charge is a monthly payment."
     },
     Human: {
-      text: "Your home requires security monitoring. A trained professional security guard with 8 years of experience monitors your property during overnight hours. They conduct regular patrols, respond to unusual activity, and can immediately contact emergency services and communicate with you if an incident occurs."
+      text: "Your home requires security monitoring. A trained professional security guard with 8 years of experience monitors your property during overnight hours. They conduct regular patrols, respond to unusual activity, and can immediately contact emergency services and communicate with you if an incident occurs. The quoted service charge is a monthly payment."
     }
   }
 };
@@ -224,8 +224,9 @@ function renderScenario(idx) {
   wtpInput.oninput = checkScenarioComplete;
 
   // WTP hint text
-  document.getElementById('wtp-hint').textContent = domain === 'Finance'
-    ? 'Allowed range: ₹5,000/month (or ₹60,000/year equivalent)'
+  const monthlyDomains = ['Finance', 'Security'];
+  document.getElementById('wtp-hint').textContent = monthlyDomains.includes(domain)
+    ? `Allowed range: ₹${data.wtpRange.min.toLocaleString()} - ₹${data.wtpRange.max.toLocaleString()} (monthly payment)`
     : `Allowed range: ₹${data.wtpRange.min.toLocaleString()} - ₹${data.wtpRange.max.toLocaleString()}`;
 
   // Next button label
