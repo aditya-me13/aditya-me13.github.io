@@ -41,10 +41,10 @@ const SCENARIOS = {
     wtpPlaceholder: "",
     wtpRange: { min: 600, max: 6000 },
     AI: {
-      text: "You want your investment portfolio of ₹1 lakh to be professionally managed. An AI-powered robo-advisor analyses your financial goals, risk tolerance, and market conditions using algorithms that process thousands of data points. It automatically rebalances your holdings and generates plain-language reports explaining its recommendations. The quoted service charge is a monthly payment."
+      text: "You want your investment portfolio of ₹10 lakh to be professionally managed. An AI-powered robo-advisor analyses your financial goals, risk tolerance, and market conditions using algorithms that process thousands of data points. It automatically rebalances your holdings and generates plain-language reports explaining its recommendations. The quoted service charge is a monthly payment."
     },
     Human: {
-      text: "You want your investment portfolio of ₹1 lakh to be professionally managed. A certified financial planner with 20 years of experience reviews your goals and situation. They provide personalised recommendations, explain the rationale behind each decision, and are available by phone or email throughout the year. The quoted service charge is a monthly payment."
+      text: "You want your investment portfolio of ₹10 lakh to be professionally managed. A certified financial planner with 20 years of experience reviews your goals and situation. They provide personalised recommendations, explain the rationale behind each decision, and are available by phone or email throughout the year. The quoted service charge is a monthly payment."
     }
   },
   Medical: {
