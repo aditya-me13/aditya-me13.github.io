@@ -13,10 +13,10 @@ const SCENARIOS = {
     wtpPlaceholder: "e.g. 300 – 1,500",
     wtpRange: { min: 300, max: 1500 },
     AI: {
-      text: "You need to get from the airport to your hotel. An AI-powered autonomous vehicle offers the trip. The system uses real-time traffic data, machine learning route optimisation, and sensor arrays to navigate safely. The vehicle displays its route and ETA on an in-app screen. No human driver is involved."
+      text: "You need to get from the airport to your hotel (approximately 15 Kms). An AI-powered autonomous vehicle offers the trip. The system uses real-time traffic data, machine learning route optimisation, and sensor arrays to navigate safely. The vehicle displays its route and ETA on an in-app screen. No human driver is involved."
     },
     Human: {
-      text: "You need to get from the airport to your hotel. A professional taxi driver with 12 years of experience offers the trip. The driver is licensed, insured, and familiar with local roads. They communicate with you throughout the journey and can respond to your questions and preferences in real time."
+      text: "You need to get from the airport to your hotel (approximately 15 Kms). A professional taxi driver with 12 years of experience offers the trip. The driver is licensed, insured, and familiar with local roads. They communicate with you throughout the journey and can respond to your questions and preferences in real time."
     }
   },
   Art: {
@@ -30,7 +30,7 @@ const SCENARIOS = {
       text: "You commission a piece of artwork for your home. An AI generative-art platform creates the work from a text description you provide. Trained on millions of artworks, it applies diffusion algorithms to produce a unique, high-resolution digital print tailored to your specifications."
     },
     Human: {
-      text: "You commission a piece of artwork for your home. A local artist with 15 years of experience creates the work from a brief you provide. They sketch drafts, consult with you on colour and style, and hand-paint the final piece, imbuing it with personal craftsmanship and creative intent."
+      text: "You commission a piece of artwork for your home. A artist with 15 years of experience creates the work from a brief you provide. They sketch drafts, consult with you on colour and style, and hand-paint the final piece, imbuing it with personal craftsmanship and creative intent."
     }
   },
   Finance: {
@@ -38,13 +38,13 @@ const SCENARIOS = {
       AI: "photos/ai_finance.png",
       Human: "photos/human_finance.png"
     },
-    wtpPlaceholder: "e.g. 500 – 5,000",
-    wtpRange: { min: 500, max: 5000 },
+    wtpPlaceholder: "",
+    wtpRange: { min: 600, max: 6000 },
     AI: {
-      text: "You need advice on your investment portfolio. An AI-powered robo-advisor analyses your financial goals, risk tolerance, and market conditions using algorithms that process thousands of data points. It automatically rebalances your holdings and generates plain-language reports explaining its recommendations."
+      text: "You want your investment portfolio of ₹1 lakh to be professionally managed. An AI-powered robo-advisor analyses your financial goals, risk tolerance, and market conditions using algorithms that process thousands of data points. It automatically rebalances your holdings and generates plain-language reports explaining its recommendations."
     },
     Human: {
-      text: "You need advice on your investment portfolio. A certified financial planner with 20 years of experience reviews your goals and situation. They provide personalised recommendations, explain the rationale behind each decision, and are available by phone or email throughout the year."
+      text: "You want your investment portfolio of ₹1 lakh to be professionally managed. A certified financial planner with 20 years of experience reviews your goals and situation. They provide personalised recommendations, explain the rationale behind each decision, and are available by phone or email throughout the year."
     }
   },
   Medical: {
@@ -218,14 +218,15 @@ function renderScenario(idx) {
   // WTP — INR with domain-specific placeholder
   const wtpInput = document.getElementById('wtp-input');
   wtpInput.value = '';
-  wtpInput.placeholder = data.wtpPlaceholder;
+  wtpInput.placeholder = '';
   wtpInput.min = data.wtpRange.min;
   wtpInput.max = data.wtpRange.max;
   wtpInput.oninput = checkScenarioComplete;
 
   // WTP hint text
-  document.getElementById('wtp-hint').textContent =
-    `Allowed range: ₹${data.wtpRange.min.toLocaleString()} - ₹${data.wtpRange.max.toLocaleString()}`;
+  document.getElementById('wtp-hint').textContent = domain === 'Finance'
+    ? 'Allowed range: ₹5,000/month (or ₹60,000/year equivalent)'
+    : `Allowed range: ₹${data.wtpRange.min.toLocaleString()} - ₹${data.wtpRange.max.toLocaleString()}`;
 
   // Next button label
   document.getElementById('next-label').textContent = isLast ? '(final questions)' : 'scenario';
@@ -324,7 +325,7 @@ document.getElementById('btn-submit').addEventListener('click', () => {
   };
   saveState();
   submitToSheet(); 
-  downloadCSV();
+  buildCSVBlob();
   showDoneScreen();
 });
 
@@ -338,7 +339,7 @@ function esc(v) {
 
 let csvBlob = null;
 
-function downloadCSV() {
+function buildCSVBlob() {
   const headers = [
     'participant_id', 'condition', 'scenario_order',
     'domain', 'trust', 'risk', 'competence', 'wtp_inr', 'time_ms',
@@ -357,8 +358,6 @@ function downloadCSV() {
   });
 
   csvBlob = new Blob([rows.join('\n')], { type: 'text/csv;charset=utf-8;' });
-  const filename = state.condition === 'AI' ? 'ai_responses.csv' : 'human_responses.csv';
-  triggerDownload(csvBlob, filename);
 }
 
 function triggerDownload(blob, filename) {
