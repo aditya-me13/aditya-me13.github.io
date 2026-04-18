@@ -277,6 +277,39 @@ function showFinalScreen() {
   showScreen('screen-final');
 }
 
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxAWA2KxEb8SdgCRDz8lrE1YuwqTntSztIn2fGgAXHVISetQSJSgWQk-tCMiiIXrtDXsw/exec";
+
+function submitToSheet() {
+  const fa = state.final_answers;
+  const orderStr = state.scenario_order.join("|");
+
+  // Build one object per scenario row — matches your CSV format exactly
+  const rows = state.responses.map(r => ({
+    participant_id: state.participant_id,
+    condition:      state.condition,
+    scenario_order: orderStr,
+    domain:         r.domain,
+    trust:          r.trust,
+    risk:           r.risk,
+    competence:     r.competence,
+    wtp_inr:        r.wtp_inr,
+    time_ms:        r.time_ms,
+    ai_attitude:    fa.ai_attitude,
+    prior_ai_use:   fa.prior_ai_use,
+    age:            fa.age,
+    gender:         fa.gender,
+    field:          fa.field
+  }));
+
+  fetch(APPS_SCRIPT_URL, {
+    method: "POST",
+    body: JSON.stringify(rows)
+  })
+  .then(res => res.json())
+  .then(data => console.log("Sheet:", data.status, data.rows + " rows written"))
+  .catch(err => console.warn("Sheet submission failed:", err));
+}
+
 /* ── SUBMIT ── */
 document.getElementById('btn-submit').addEventListener('click', () => {
   const ageRaw = document.getElementById('age-input').value.trim();
@@ -290,6 +323,7 @@ document.getElementById('btn-submit').addEventListener('click', () => {
     field:        fieldRaw || ''
   };
   saveState();
+  submitToSheet(); 
   downloadCSV();
   showDoneScreen();
 });
