@@ -12,6 +12,12 @@ const SCENARIOS = {
     },
     wtpPlaceholder: "e.g. 300 – 1,500",
     wtpRange: { min: 300, max: 1500 },
+    descriptions: {
+      trust: "Trust here means your confidence in the service's safety and reliability.",
+      risk: "Risk here means the potential for accidents, delays, or system failures.",
+      competence: "Competence here means the service's ability to navigate efficiently and handle unexpected events.",
+      wtp: "Willingness to Pay for this single trip."
+    },
     AI: {
       text: "You need to get from the airport to your hotel (approximately 15 Kms). An AI-powered autonomous vehicle offers the trip. The system uses real-time traffic data, machine learning route optimisation, and sensor arrays to navigate safely. The vehicle displays its route and ETA on an in-app screen. No human driver is involved."
     },
@@ -26,6 +32,12 @@ const SCENARIOS = {
     },
     wtpPlaceholder: "e.g. 2,000 – 20,000",
     wtpRange: { min: 2000, max: 20000 },
+    descriptions: {
+      trust: "Trust here means your confidence in the service's ability to create aesthetically pleasing and meaningful work.",
+      risk: "Risk here means the potential for the final artwork to be unoriginal, low-quality, or misaligned with your vision.",
+      competence: "Competence here means the service's ability to understand your prompt and generate a high-quality, creative piece.",
+      wtp: "Willingness to Pay for this commissioned artwork."
+    },
     AI: {
       text: "You commission a piece of artwork for your home. An AI generative-art platform creates the work from a text description you provide. Trained on millions of artworks, it applies diffusion algorithms to produce a unique, high-resolution digital print tailored to your specifications."
     },
@@ -40,6 +52,12 @@ const SCENARIOS = {
     },
     wtpPlaceholder: "",
     wtpRange: { min: 600, max: 6000 },
+    descriptions: {
+      trust: "Trust here means your confidence in the service to manage your finances securely and in your best interest.",
+      risk: "Risk here means the potential for financial loss due to poor investment decisions or mismanagement.",
+      competence: "Competence here means the service's ability to make sound financial decisions and generate returns.",
+      wtp: "Willingness to Pay for this monthly investment management service."
+    },
     AI: {
       text: "You want your investment portfolio of ₹10 lakh to be professionally managed. An AI-powered robo-advisor analyses your financial goals, risk tolerance, and market conditions using algorithms that process thousands of data points. It automatically rebalances your holdings and generates plain-language reports explaining its recommendations. The quoted service charge is a monthly payment."
     },
@@ -54,6 +72,12 @@ const SCENARIOS = {
     },
     wtpPlaceholder: "e.g. 200 – 2,000",
     wtpRange: { min: 200, max: 2000 },
+    descriptions: {
+      trust: "Trust here means your confidence in the accuracy of the diagnosis and the appropriateness of the recommendations.",
+      risk: "Risk here means the potential for a misdiagnosis, leading to incorrect or delayed treatment.",
+      competence: "Competence here means the service's ability to accurately identify conditions and provide reliable medical advice.",
+      wtp: "Willingness to Pay for this preliminary health assessment."
+    },
     AI: {
       text: "You have concerning symptoms and need a preliminary health assessment. An AI diagnostic system analyses your reported symptoms, medical history, and lab results using deep-learning models trained on millions of clinical records. It provides a ranked list of possible conditions and recommended next steps."
     },
@@ -68,6 +92,12 @@ const SCENARIOS = {
     },
     wtpPlaceholder: "e.g. 1,000 – 8,000",
     wtpRange: { min: 1000, max: 8000 },
+    descriptions: {
+      trust: "Trust here means your confidence in the service's ability to protect your home and respond effectively to threats.",
+      risk: "Risk here means the potential for security breaches, false alarms, or failure to detect a threat.",
+      competence: "Competence here means the service's ability to distinguish real threats from non-threats and take appropriate action.",
+      wtp: "Willingness to Pay for this monthly security monitoring service."
+    },
     AI: {
       text: "Your home requires security monitoring. An AI-powered system continuously analyses camera and sensor feeds using computer vision and anomaly-detection models. It distinguishes routine activity from genuine threats, sends real-time alerts, and can automatically contact emergency services if a breach is detected. The quoted service charge is a monthly payment."
     },
@@ -210,6 +240,12 @@ function renderScenario(idx) {
   // Text
   document.getElementById('scenario-text').textContent = data[cond].text;
 
+  // Descriptions for likert scales
+  document.querySelector('.likert-row[data-field="trust"]').nextElementSibling.textContent = data.descriptions.trust;
+  document.querySelector('.likert-row[data-field="risk"]').nextElementSibling.textContent = data.descriptions.risk;
+  document.querySelector('.likert-row[data-field="competence"]').nextElementSibling.textContent = data.descriptions.competence;
+
+
   // Likert rows
   buildLikert(document.querySelector('.likert-row[data-field="trust"]'),      'trust',      checkScenarioComplete);
   buildLikert(document.querySelector('.likert-row[data-field="risk"]'),       'risk',       checkScenarioComplete);
@@ -222,6 +258,7 @@ function renderScenario(idx) {
   wtpInput.min = data.wtpRange.min;
   wtpInput.max = data.wtpRange.max;
   wtpInput.oninput = checkScenarioComplete;
+  document.getElementById('wtp-description').textContent = data.descriptions.wtp;
 
   // WTP hint text
   const monthlyDomains = ['Finance', 'Security'];
