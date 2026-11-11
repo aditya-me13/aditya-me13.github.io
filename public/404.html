@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting… · Aditya Mehta</title>
+    <meta name="robots" content="noindex" />
+    <script>
+      // Map old Jekyll-era URLs to sections of the new single-page site.
+      (function () {
+        var p = location.pathname.toLowerCase();
+        var map = [
+          ['/internships', 'experience'], ['/intern', 'experience'],
+          ['/projects', 'projects'], ['/teaching', 'projects'],
+          ['/achievements', 'achievements'], ['/cv', 'achievements'],
+          ['/pors', 'leadership'],
+          ['/reach', 'contact'], ['/contact', 'contact'],
+          ['/about', 'about']
+        ];
+        for (var i = 0; i < map.length; i++) {
+          if (p.indexOf(map[i][0]) === 0) { location.replace('/#' + map[i][1]); return; }
+        }
+        location.replace('/');
+      })();
+    </script>
+  </head>
+  <body style="background:#0a0c0f;color:#a3adb9;font-family:system-ui;display:grid;place-items:center;height:100vh;margin:0">
+    <p>Page moved. <a href="/" style="color:#3ee6a8">Go to the homepage →</a></p>
+  </body>
+</html>
