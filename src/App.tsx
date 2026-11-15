@@ -7,7 +7,6 @@ import { Ticker } from './components/Ticker';
 import { About } from './components/About';
 import { Experience } from './components/Experience';
 import { Projects } from './components/Projects';
-import { Skills } from './components/Skills';
 import { Education } from './components/Education';
 import { Leadership } from './components/Leadership';
 import { Achievements } from './components/Achievements';
@@ -15,6 +14,7 @@ import { Beyond } from './components/Beyond';
 import { Contact } from './components/Contact';
 import { CommandPalette } from './components/CommandPalette';
 import { Toast } from './components/Toast';
+import { Intro } from './components/Intro';
 
 export default function App() {
   const { theme, toggle } = useTheme();
@@ -31,7 +31,6 @@ export default function App() {
           <About />
           <Experience />
           <Projects />
-          <Skills />
           <Education />
           <Leadership />
           <Achievements />
@@ -40,6 +39,7 @@ export default function App() {
         </main>
         <CommandPalette onToggleTheme={toggle} />
         <Toast />
+        <Intro />
       </AppProvider>
     </MotionConfig>
   );

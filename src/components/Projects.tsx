@@ -1,7 +1,7 @@
 import { AnimatePresence, LayoutGroup, motion } from 'framer-motion';
 import { ArrowUpRight, Github, PlayCircle, X } from 'lucide-react';
 import { useMemo, useState } from 'react';
-import { PROJECTS, PROJECT_CATEGORIES, type Project } from '../data/profile';
+import { PROJECTS, PROJECT_CATEGORIES, SKILLS, type Project } from '../data/profile';
 import { useApp } from '../context';
 import { CloseButton, Overlay } from './Modal';
 import { SectionHead } from './Reveal';
@@ -119,6 +119,12 @@ export function Projects() {
     return c;
   }, []);
 
+  const usage = useMemo(() => {
+    const m: Record<string, number> = {};
+    PROJECTS.forEach((p) => p.skills.forEach((s) => (m[s] = (m[s] ?? 0) + 1)));
+    return m;
+  }, []);
+
   const list = useMemo(() => {
     let l = PROJECTS;
     if (skill) l = l.filter((p) => p.skills.includes(skill));
@@ -134,7 +140,7 @@ export function Projects() {
         <SectionHead
           eyebrow="03 / Projects"
           title="Things I’ve built."
-          sub="Machine learning, hardware, algorithms and signal processing. Filter by area, or pick a skill below to see where I’ve used it."
+          sub="Machine learning, secure software, hardware, algorithms and signal processing. Filter by area, or pick a skill to see the projects that use it."
         />
         <LayoutGroup id="filters">
           <div className="filters" role="toolbar" aria-label="Filter projects">
@@ -166,6 +172,32 @@ export function Projects() {
             )}
           </div>
         </LayoutGroup>
+        <div className="skillbar" role="group" aria-label="Filter projects by skill">
+          {SKILLS.map((g) => (
+            <div className="skillbar-group" key={g.group}>
+              <span className="skillbar-label">{g.group}</span>
+              <div className="skillbar-list">
+                {g.items.map((s) => {
+                  const n = usage[s] ?? 0;
+                  const on = skill === s;
+                  return (
+                    <button
+                      key={s}
+                      className={`sk${on ? ' on' : ''}`}
+                      disabled={!n}
+                      aria-pressed={on}
+                      onClick={() => setSkill(on ? null : s)}
+                      title={n ? `${n} project${n > 1 ? 's' : ''} use ${s}` : 'Used in work or coursework'}
+                    >
+                      {s}
+                      {n > 0 && <span className="n">{n}</span>}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
+        </div>
         <motion.div layout className="proj-grid">
           <AnimatePresence mode="popLayout">
             {list.map((p) => (

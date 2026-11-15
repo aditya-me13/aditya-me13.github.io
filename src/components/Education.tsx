@@ -15,7 +15,7 @@ export function Education() {
   return (
     <section className="section" id="education">
       <div className="container">
-        <SectionHead eyebrow="05 / Education" title="Credentials." sub="My degree and full transcript are linked below for verification." />
+        <SectionHead eyebrow="04 / Education" title="Credentials." sub="My degree and full transcript are linked below for verification." />
         <div className="edu-layout">
           <Reveal>
             <div className="card edu-main" ref={ref}>

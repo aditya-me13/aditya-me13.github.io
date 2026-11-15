@@ -14,7 +14,7 @@ export function Achievements() {
   return (
     <section className="section" id="achievements">
       <div className="container">
-        <SectionHead eyebrow="07 / Achievements" title="Honours & certifications." />
+        <SectionHead eyebrow="06 / Achievements" title="Honours & certifications." />
         <div className="ach-grid">
           {ACHIEVEMENTS.map((a, i) => {
             const inner = (

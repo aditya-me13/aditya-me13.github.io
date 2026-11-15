@@ -1,11 +1,13 @@
 import { motion } from 'framer-motion';
 import { X } from 'lucide-react';
 import { useEffect, useRef, type ReactNode } from 'react';
+import { sfx } from '../lib/feedback';
 
 export function Overlay({ onClose, children, className = '', labelledBy }: { onClose: () => void; children: ReactNode; className?: string; labelledBy?: string }) {
   const panel = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    sfx('open', { haptic: false });
     const prev = document.activeElement as HTMLElement | null;
     const { overflow } = document.body.style;
     document.body.style.overflow = 'hidden';
@@ -27,6 +29,7 @@ export function Overlay({ onClose, children, className = '', labelledBy }: { onC
     };
     window.addEventListener('keydown', onKey);
     return () => {
+      sfx('close', { haptic: false });
       document.body.style.overflow = overflow;
       window.removeEventListener('keydown', onKey);
       prev?.focus?.();

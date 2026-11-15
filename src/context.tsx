@@ -1,5 +1,6 @@
 import { createContext, useCallback, useContext, useRef, useState, type ReactNode } from 'react';
 import { PROFILE } from './data/profile';
+import { sfx } from './lib/feedback';
 
 type Ctx = {
   skill: string | null;
@@ -24,6 +25,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
 
   const showToast = useCallback((msg: string) => {
     setToast(msg);
+    sfx('success', { haptic: false });
     window.clearTimeout(timer.current);
     timer.current = window.setTimeout(() => setToast(null), 2200);
   }, []);
@@ -50,7 +52,29 @@ export function useApp() {
   return c;
 }
 
+let arriveTimer: number | undefined;
+
 export const scrollToId = (id: string) => {
-  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   history.replaceState(null, '', `#${id}`);
+  if (id === 'top') return;
+  // Once the scroll settles, play a short "arrival" sweep on the section head.
+  window.clearTimeout(arriveTimer);
+  document.querySelectorAll('.arrive').forEach((n) => n.classList.remove('arrive'));
+  const mark = () => {
+    window.removeEventListener('scrollend', mark);
+    window.clearTimeout(arriveTimer);
+    el.classList.remove('arrive');
+    void el.offsetWidth;
+    el.classList.add('arrive');
+    arriveTimer = window.setTimeout(() => el.classList.remove('arrive'), 1400);
+  };
+  if ('onscrollend' in (window as object)) {
+    window.addEventListener('scrollend', mark, { once: true });
+    arriveTimer = window.setTimeout(mark, 1200);
+  } else {
+    arriveTimer = window.setTimeout(mark, 650);
+  }
 };

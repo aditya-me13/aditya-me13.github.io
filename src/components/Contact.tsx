@@ -19,7 +19,7 @@ export function Contact() {
         <div className="grid-bg" />
         <div className="container contact-inner">
           <Reveal>
-            <span className="eyebrow">09 / Contact</span>
+            <span className="eyebrow">08 / Contact</span>
           </Reveal>
           <Reveal delay={0.05}>
             <h2>

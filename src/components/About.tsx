@@ -34,17 +34,11 @@ export function About() {
             ))}
             <div className="about-facts">
               <Fact n={9.41} dec={2} label="Graduating CPI" />
-              <Fact n={10} suffix="+" label="Engineering projects" />
+              <Fact n={20} suffix="+" label="Projects at IITGN" />
               <Fact n={100} suffix="+" label="People led at Blithchron" />
             </div>
           </Reveal>
           <Reveal className="about-side" delay={0.12}>
-            <div className="photo-wrap">
-              <img src={PROFILE.photo} alt={`Portrait of ${PROFILE.name}`} loading="lazy" width={720} height={900} />
-              <span className="photo-tag mono">
-                <MapPin size={11} style={{ display: 'inline', verticalAlign: '-1px' }} /> from {PROFILE.hometown}
-              </span>
-            </div>
             <div className="card now-card">
               <div className="badge">
                 <Briefcase size={20} />
@@ -52,6 +46,15 @@ export function About() {
               <div>
                 <div className="t">Now at Barclays</div>
                 <div className="s">{[role, where].filter(Boolean).join(' · ') || 'Full-time, since graduating in 2026'}</div>
+              </div>
+            </div>
+            <div className="card now-card">
+              <div className="badge">
+                <MapPin size={20} />
+              </div>
+              <div>
+                <div className="t">From {PROFILE.hometown}</div>
+                <div className="s">Gujarat, India</div>
               </div>
             </div>
           </Reveal>

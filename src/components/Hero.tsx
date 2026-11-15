@@ -51,7 +51,10 @@ export function Hero() {
     <section className="hero" id="top">
       <HeroField />
       <div className="hero-vignette" />
-      <div className="container">
+      <div className="container hero-grid">
+        <motion.figure className="hero-photo" {...anim(0.2)}>
+          <img src={PROFILE.photo} alt={`Portrait of ${PROFILE.name}`} width={480} height={480} fetchPriority="high" />
+        </motion.figure>
         <div className="hero-content">
           <motion.div className="status-pill" {...anim(0.05)}>
             <span className="pulse" />

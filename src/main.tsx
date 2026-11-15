@@ -4,6 +4,9 @@ import '@fontsource-variable/inter';
 import '@fontsource-variable/jetbrains-mono';
 import './styles/global.css';
 import App from './App';
+import { installGlobalFeedback } from './lib/feedback';
+
+installGlobalFeedback();
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

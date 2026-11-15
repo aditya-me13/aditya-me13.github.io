@@ -10,7 +10,7 @@ export function Leadership() {
   return (
     <section className="section" id="leadership">
       <div className="container">
-        <SectionHead eyebrow="06 / Leadership" title="Beyond the classroom." sub="Roles where I organised, mentored or represented people at IIT Gandhinagar." />
+        <SectionHead eyebrow="05 / Leadership" title="Beyond the classroom." sub="Roles where I organised, mentored or represented people at IIT Gandhinagar." />
         <LayoutGroup id="lead">
           <div className="tabs" role="tablist" aria-label="Leadership categories">
             {LEADERSHIP.map((g, i) => (

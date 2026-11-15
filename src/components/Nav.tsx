@@ -1,14 +1,17 @@
 import { AnimatePresence, motion, useScroll, useSpring } from 'framer-motion';
-import { Command, Menu, Moon, Sun, X } from 'lucide-react';
+import { Command, Menu, Moon, Sun, Volume2, VolumeX, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { PROFILE, SECTIONS } from '../data/profile';
 import { useActiveSection } from '../hooks/useActiveSection';
 import { scrollToId, useApp } from '../context';
+import { isFeedbackOn, onFeedbackChange, setFeedbackOn, sfx } from '../lib/feedback';
 
 const ids = SECTIONS.map((s) => s.id);
 
-export function Nav({ theme, onToggleTheme }: { theme: string; onToggleTheme: () => void }) {
+export function Nav({ theme, onToggleTheme }: { theme: string; onToggleTheme: (origin?: { x: number; y: number }) => void }) {
   const [scrolled, setScrolled] = useState(false);
+  const [sound, setSound] = useState(isFeedbackOn);
+  useEffect(() => onFeedbackChange(setSound) as () => void, []);
   const [menu, setMenu] = useState(false);
   const active = useActiveSection(ids);
   const { setPaletteOpen } = useApp();
@@ -39,7 +42,7 @@ export function Nav({ theme, onToggleTheme }: { theme: string; onToggleTheme: ()
           </a>
           <nav className="nav-links" aria-label="Sections">
             {SECTIONS.map((s) => (
-              <a key={s.id} href={`#${s.id}`} onClick={go(s.id)} className={active === s.id ? 'active' : ''}>
+              <a key={s.id} href={`#${s.id}`} onClick={go(s.id)} data-sfx="nav" className={active === s.id ? 'active' : ''}>
                 {s.label}
               </a>
             ))}
@@ -49,10 +52,31 @@ export function Nav({ theme, onToggleTheme }: { theme: string; onToggleTheme: ()
               <span className="label">Search</span>
               <span className="kbd">{isMac ? '⌘' : 'Ctrl'} K</span>
             </button>
-            <button className="icon-btn" onClick={onToggleTheme} aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}>
+            <button
+              className="icon-btn"
+              data-sfx="none"
+              onClick={() => {
+                const next = !sound;
+                setFeedbackOn(next);
+                if (next) sfx('success');
+              }}
+              aria-pressed={sound}
+              aria-label={sound ? 'Mute sounds and haptics' : 'Turn on sounds and haptics'}
+              title={sound ? 'Sound on' : 'Sound off'}
+            >
+              {sound ? <Volume2 size={17} /> : <VolumeX size={17} />}
+            </button>
+            <button
+              className="icon-btn"
+              data-sfx="none"
+              onClick={(e) => {
+                const r = e.currentTarget.getBoundingClientRect();
+                onToggleTheme({ x: r.left + r.width / 2, y: r.top + r.height / 2 });
+              }}
+              aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}>
               {theme === 'dark' ? <Sun size={17} /> : <Moon size={17} />}
             </button>
-            <button className="icon-btn menu-btn" onClick={() => setMenu((m) => !m)} aria-expanded={menu} aria-label="Menu">
+            <button className="icon-btn menu-btn" onClick={() => setMenu((m) => !m)} data-sfx={menu ? 'close' : 'open'} aria-expanded={menu} aria-label="Menu">
               {menu ? <X size={18} /> : <Menu size={18} />}
             </button>
           </div>
@@ -70,7 +94,7 @@ export function Nav({ theme, onToggleTheme }: { theme: string; onToggleTheme: ()
             aria-label="Sections"
           >
             {SECTIONS.map((s, i) => (
-              <a key={s.id} href={`#${s.id}`} onClick={go(s.id)}>
+              <a key={s.id} href={`#${s.id}`} onClick={go(s.id)} data-sfx="nav">
                 {s.label}
                 <span>0{i + 1}</span>
               </a>

@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { DEGREE_URL, PROFILE, PROJECTS, RESUME_URL, SECTIONS, SOCIALS, TRANSCRIPT_URL, isPlaceholder } from '../data/profile';
 import { scrollToId, useApp } from '../context';
 import { Overlay } from './Modal';
+import { sfx } from '../lib/feedback';
 import { SOCIAL_ICON } from './Contact';
 
 type Item = { id: string; group: string; label: string; icon: ReactNode; hint?: string; disabled?: boolean; keywords?: string; run: () => void };
@@ -27,7 +28,7 @@ function score(q: string, text: string): number {
 
 const openUrl = (u: string) => window.open(u, '_blank', 'noopener,noreferrer');
 
-export function CommandPalette({ onToggleTheme }: { onToggleTheme: () => void }) {
+export function CommandPalette({ onToggleTheme }: { onToggleTheme: (origin?: { x: number; y: number }) => void }) {
   const { paletteOpen, setPaletteOpen, copyEmail, setProjectId, setSkill } = useApp();
   const [q, setQ] = useState('');
   const [sel, setSel] = useState(0);
@@ -137,6 +138,7 @@ export function CommandPalette({ onToggleTheme }: { onToggleTheme: () => void })
       setSel((s) => Math.max(0, s - 1));
     } else if (e.key === 'Enter') {
       e.preventDefault();
+      if (results[sel] && !results[sel].disabled) sfx('select');
       results[sel]?.run();
     }
   };
